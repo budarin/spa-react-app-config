@@ -36,11 +36,6 @@ module.exports = {
             version: 'detect',
         },
 
-        'import/resolver': {
-            typescript: true,
-            node: false,
-        },
-
         'import/extensions': ['.ts', '.tsx'],
     },
 
