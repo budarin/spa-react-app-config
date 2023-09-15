@@ -1,20 +1,23 @@
 module.exports = {
     env: {
         browser: true,
-        es2021: true,
+        es2024: true,
     },
+
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:import/recommended',
+        'plugin:import/typescript',
     ],
 
     parser: '@typescript-eslint/parser',
+
     parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module',
     },
+
     plugins: [
         '@typescript-eslint',
         '@babel/eslint-plugin',
@@ -27,21 +30,16 @@ module.exports = {
         // должен быть последним!
         'prettier',
     ],
+
     settings: {
         react: {
             version: 'detect',
         },
+
+        'import/extensions': ['.ts', '.tsx'],
     },
+
     overrides: [
-        {
-            env: {
-                node: true,
-            },
-            files: ['.eslintrc.{js,cjs}'],
-            parserOptions: {
-                sourceType: 'script',
-            },
-        },
         {
             // только для тестов используем плагины для тестов
             files: '**/?(*.)+(spec|test).(js|ts|tsx)',
@@ -55,6 +53,7 @@ module.exports = {
             },
         },
     ],
+
     rules: {
         'react/prop-types': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
@@ -73,5 +72,6 @@ module.exports = {
         //     },
         // ],
     },
+
     ignorePatterns: ['/*', '!/src'],
 };
