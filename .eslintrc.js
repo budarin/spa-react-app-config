@@ -1,7 +1,7 @@
 module.exports = {
     env: {
         browser: true,
-        es2021: true,
+        es2024: true,
     },
 
     extends: [
@@ -16,7 +16,6 @@ module.exports = {
 
     parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module',
     },
 
     plugins: [
@@ -36,22 +35,16 @@ module.exports = {
         react: {
             version: 'detect',
         },
+
         'import/resolver': {
             typescript: true,
             node: true,
         },
+
+        'import/extensions': ['.ts', '.tsx'],
     },
 
     overrides: [
-        {
-            env: {
-                node: true,
-            },
-            files: ['.eslintrc.{js,cjs}'],
-            parserOptions: {
-                sourceType: 'script',
-            },
-        },
         {
             // только для тестов используем плагины для тестов
             files: '**/?(*.)+(spec|test).(js|ts|tsx)',
@@ -84,5 +77,6 @@ module.exports = {
         //     },
         // ],
     },
+
     ignorePatterns: ['/*', '!/src'],
 };
