@@ -9,6 +9,7 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:import/recommended',
+        'plugin:import/typescript',
     ],
 
     parser: '@typescript-eslint/parser',
@@ -34,6 +35,10 @@ module.exports = {
     settings: {
         react: {
             version: 'detect',
+        },
+        'import/resolver': {
+            typescript: true,
+            node: true,
         },
     },
 

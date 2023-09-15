@@ -1,6 +1,6 @@
 module.exports = {
     babelConfig: require('./babel.config.js'),
-    prettierrc: require('./.prettierrc.js'),
+    prettierConfig: require('./prettier.config.js'),
     eslintrc: require('./.eslintrc.js'),
     styleLintConfig: require('./stylelint.config.js'),
     jestConfig: require('./jest.config.js'),
