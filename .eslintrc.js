@@ -3,6 +3,7 @@ module.exports = {
         browser: true,
         es2021: true,
     },
+
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
@@ -11,10 +12,12 @@ module.exports = {
     ],
 
     parser: '@typescript-eslint/parser',
+
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
+
     plugins: [
         '@typescript-eslint',
         '@babel/eslint-plugin',
@@ -27,11 +30,13 @@ module.exports = {
         // должен быть последним!
         'prettier',
     ],
+
     settings: {
         react: {
             version: 'detect',
         },
     },
+
     overrides: [
         {
             env: {
@@ -55,6 +60,7 @@ module.exports = {
             },
         },
     ],
+
     rules: {
         'react/prop-types': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
