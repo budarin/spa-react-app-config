@@ -1,48 +1,64 @@
-# spa-react-app-config
+# @budarin/spa-react-app-config
 
 Данный пакет основан на докладе Ивана Малюгина ["А почему бы не вынести все конфиги в отдельный пакет, сократив бойлерплейт до нуля?"](https://www.youtube.com/watch?v=OejfAvTj93I&t=941s&ab_channel=HolyJS)
 
 Существует альтернативный проект [heft](https://heft.rushstack.io/)
 
+Преимущества использования внешнего пакета с базовыми настройками конфигураций приложения:
+
+-   все необходимые пакеты устанавливаются при помощи установки всего одного пакета
+-   все приложения будут использовать единые настройки
+-   ...
+
+Неостатки:
+
+-   в CI всегда юудут устанавливаться все пакеты для разработки т.к. при публикации пакета устанавливаются только зависимости из секции dependencies, а в данном пакете мы вынуждены все пакеты размещать только в секции dependencies, чтобы они были установлены у клиента
+
+## Установка
+
+`yarn add @budarin/spa-react-app-config`
+
+## Настройка проекта
+
 В приложении нужно в файлах конфигурации, созданных в приложении, экспортировать импортированные из node_modules конфиги
 
-## babelrc.js
+### babelrc.js
 
 ```js
 module.exports = require('@budarin/spa-react-app-config').babelConfig(__dirname);
 ```
 
-## prettierrc.js
+### prettierrc.js
 
 ```js
 module.exports = require('@budarin/spa-react-app-config').prettierrc;
 ```
 
-## .eslintrc.js
+### .eslintrc.js
 
 ```js
 module.exports = require('@budarin/spa-react-app-config').eslintrc;
 ```
 
-## stylelint.config.js
+### stylelint.config.js
 
 ```js
 module.exports = require('@budarin/spa-react-app-config').stylelintConfig;
 ```
 
-## jest.config.js
+### jest.config.js
 
 ```js
 module.exports = require('@budarin/spa-react-app-config').jestConfig;
 ```
 
-## playwright.config.ts
+### playwright.config.ts
 
 ```js
 module.exports = require('@budarin/spa-react-app-config').playwrightConfig;
 ```
 
-## tsconfig
+### tsconfig
 
 ```json
 {
@@ -50,7 +66,7 @@ module.exports = require('@budarin/spa-react-app-config').playwrightConfig;
 }
 ```
 
-## webpack
+### webpack
 
 в общем случае просто экспортируем импортированный из node_modules конфиг
 
