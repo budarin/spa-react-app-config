@@ -1,6 +1,6 @@
 {
   "name": "@budarin/spa-react-app-config",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Configs for React SPA",
   "main": "index.js",
   "repository": "https://github.com/budarin/spa-react-app-config.git",

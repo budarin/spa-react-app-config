@@ -1,30 +1,33 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const CopyPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    devtool: 'inline-source-map',
+    mode: 'production',
+    devtool: false,
     entry: './src/index.tsx',
+    cache: {
+        type: 'filesystem',
+    },
     output: {
         path: path.resolve('./dist'),
+        filename: '[name].[contenthash].js',
+        compareBeforeEmit: true,
+    },
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserPlugin()],
+        concatenateModules: true,
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './assets/index.html',
-            inject: 'body',
-        }),
         new webpack.DefinePlugin({
             __DEV__: process.env['NODE_ENV'] !== 'production',
             __PROD__: process.env['NODE_ENV'] === 'production',
         }),
-        new CopyPlugin({
-            patterns: [{ from: './assets/site_icons/' }],
-        }),
     ],
     resolve: {
+        modules: ['node_modules', 'src'],
         extensions: [
             '.ts',
             '.tsx',
@@ -41,28 +44,17 @@ module.exports = {
             '.xml',
             '.woff2',
         ],
-        modules: ['node_modules', 'src'],
     },
     module: {
         rules: [
-            {
-                test: /\.(mp3|aac|ogg)$/,
-                exclude: [path.resolve('./assets/site_icons/')],
-                type: 'asset/resource',
-            },
-            {
-                test: /\.(gif|svg|png)$/,
-                exclude: [path.resolve('./assets/site_icons/')],
-                type: 'asset/resource',
-            },
             {
                 test: /\.(ts|tsx|js|jsx|json)$/,
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'esbuild-loader',
+                        loader: 'babel-loader',
                         options: {
-                            target: 'esnext',
+                            cacheDirectory: path.resolve('node_modules/.cache/client'),
                         },
                     },
                 ],
@@ -75,7 +67,6 @@ module.exports = {
                     {
                         loader: 'postcss-loader',
                         options: {
-                            sourceMap: true,
                             postcssOptions: {
                                 plugins: [
                                     [
@@ -100,20 +91,5 @@ module.exports = {
                 ],
             },
         ],
-    },
-
-    devServer: {
-        port: 3000,
-        client: {
-            overlay: false,
-        },
-        static: {
-            publicPath: '/dist',
-            directory: './dist',
-        },
-        hot: true,
-        open: false,
-        compress: true,
-        historyApiFallback: true,
     },
 };

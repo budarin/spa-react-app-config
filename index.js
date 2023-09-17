@@ -5,6 +5,7 @@ module.exports = {
     styleLintConfig: require('./stylelint.config.js'),
     jestConfig: require('./jest.config.js'),
     // playwrightConfig: require('./playwright.config.ts'),
+    webpackPlugins: require('./webpack/plugins.js'),
     webpackConfigs: {
         dev: require('./webpack/webpack.config.js'),
         prod: require('./webpack/prod.webpack.config.js'),
