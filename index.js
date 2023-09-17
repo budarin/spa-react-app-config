@@ -7,11 +7,11 @@ module.exports = {
     // playwrightConfig: require('./playwright.config.ts'),
     webpackPlugins: require('./webpack/plugins.js'),
     webpackConfigs: {
-        dev: require('./webpack/webpack.config.js'),
-        prod: require('./webpack/prod.webpack.config.js'),
-        client: require('./webpack/client.webpack.config.js'),
-        clientProd: require('./webpack/client.prod.webpack.config.js'),
-        sw: require('./webpack/sw.webpack.config.js'),
-        swProd: require('./webpack/sw.prod.webpack.config.js'),
+        dev: require('./webpack/config.js'),
+        prod: require('./webpack/prod.config.js'),
+        client: require('./webpack/client.config.js'),
+        clientProd: require('./webpack/client.prod.config.js'),
+        sw: require('./webpack/sw.config.js'),
+        swProd: require('./webpack/sw.prod.config.js'),
     },
 };
