@@ -1,14 +1,18 @@
+const { es2024, browser, node, jest, worker, serviceworker } = require('globals');
+
 module.exports = {
     root: true,
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
 
-    env: {
-        es2024: true,
-        browser: true,
-        node: false,
-        jest: true,
-        'jest/globals': true,
-        serviceworker: true,
+    languageOptions: {
+        globals: {
+            es2024,
+            browser,
+            node,
+            jest,
+            worker,
+            serviceworker,
+        },
     },
 
     extends: [

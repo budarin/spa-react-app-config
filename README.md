@@ -28,16 +28,16 @@
 module.exports = require('@budarin/spa-react-app-config').babelConfig(__dirname);
 ```
 
-### prettierrc.js
+### prettier.config.js
 
 ```js
-module.exports = require('@budarin/spa-react-app-config').prettierrc;
+module.exports = require('@budarin/spa-react-app-config').prettierConfig;
 ```
 
-### .eslintrc.js
+### eslint.config.js
 
 ```js
-module.exports = require('@budarin/spa-react-app-config').eslintrc;
+module.exports = require('@budarin/spa-react-app-config').eslintConfig;
 ```
 
 ### stylelint.config.js
