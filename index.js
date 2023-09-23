@@ -1,7 +1,7 @@
 module.exports = {
     babelConfig: require('./babel.config.js'),
     prettierConfig: require('./prettier.config.js'),
-    eslintrc: require('./.eslintrc.js'),
+    eslintConfig: require('./eslint.config.js'),
     styleLintConfig: require('./stylelint.config.js'),
     jestConfig: require('./jest.config.js'),
     // playwrightConfig: require('./playwright.config.ts'),
