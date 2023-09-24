@@ -34,10 +34,10 @@ module.exports = require('@budarin/spa-react-app-config').babelConfig(__dirname)
 module.exports = require('@budarin/spa-react-app-config').prettierConfig;
 ```
 
-### eslint.config.js
+### eslintrc.js
 
 ```js
-module.exports = require('@budarin/spa-react-app-config').eslintConfig;
+module.exports = require('@budarin/spa-react-app-config').eslintrc;
 ```
 
 ### stylelint.config.js
