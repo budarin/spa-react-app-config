@@ -1,4 +1,5 @@
 module.exports = {
+    root: true,
     env: {
         es2024: true,
         browser: true,
@@ -10,16 +11,15 @@ module.exports = {
 
     extends: [
         'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
+        'plugin:@typescript-eslint/strict',
         'plugin:import/recommended',
         'plugin:import/typescript',
         'plugin:jsx-a11y/recommended',
         'plugin:sonarjs/recommended',
-        'plugin:jest/recommended',
-        'plugin:jest-dom/recommended',
-        'plugin:testing-library/react',
     ],
+
+    plugins: ['@typescript-eslint', '@babel'],
 
     parser: '@typescript-eslint/parser',
 
@@ -29,20 +29,6 @@ module.exports = {
             jsx: true,
         },
     },
-
-    plugins: [
-        '@typescript-eslint',
-        'react',
-        '@babel',
-        'import',
-        'jsx-a11y',
-        'optimize-regex',
-        'jest',
-        'jest-dom',
-        'testing-library',
-        // должен быть последним!
-        'prettier',
-    ],
 
     settings: {
         react: {
@@ -59,6 +45,7 @@ module.exports = {
         {
             // только для тестов используем плагины для тестов
             files: '**/?(*.)+(spec|test).(js|ts|tsx)',
+            plugins: ['jest'],
             extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended', 'plugin:testing-library/react'],
         },
         {
@@ -72,9 +59,9 @@ module.exports = {
 
     rules: {
         'react/prop-types': 'off',
-        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
         '@typescript-eslint/explicit-function-return-type': 'off',
     },
 
-    ignorePatterns: ['/*', '!/src'],
+    ignorePatterns: ['./*', '!/src'],
 };
