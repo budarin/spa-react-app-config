@@ -64,5 +64,5 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
     },
 
-    ignorePatterns: ['./*', '!/src'],
+    ignorePatterns: ['*', '!./src'],
 };
