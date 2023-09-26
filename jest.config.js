@@ -61,7 +61,7 @@ module.exports = {
     // forceCoverageMatch: [],
 
     // A path to a module which exports an async function that is triggered once before all test suites
-    globalSetup: path.join(__dirname, '/jest/setup.js'),
+    globalSetup: path.join(__dirname, './jest/setup.js'),
 
     // A path to a module which exports an async function that is triggered once after all test suites
     // globalTeardown: undefined,
@@ -132,7 +132,7 @@ module.exports = {
     // setupFiles: [],
 
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
-    setupFilesAfterEnv: [path.join(__dirname, '/jest/setupTests.js')],
+    setupFilesAfterEnv: [path.join(__dirname, './jest/setupTests.js')],
 
     // The number of seconds after which a test is considered as slow and reported as such in the results.
     // slowTestThreshold: 5,
@@ -166,7 +166,7 @@ module.exports = {
 
     // A map from regular expressions to paths to transformers
     transform: {
-        '\\.[jt]sx?$': 'babel-jest',
+        '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
     },
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
@@ -179,7 +179,7 @@ module.exports = {
     // unmockedModulePathPatterns: undefined,
 
     // Indicates whether each individual test should be reported during the run
-    // verbose: undefined,
+    verbose: true,
 
     // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
     // watchPathIgnorePatterns: [],
