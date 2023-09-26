@@ -1,8 +1,7 @@
 const path = require('path');
+const { dependencies } = require(path.resolve(__dirname, './package.json'));
 
 module.exports = (cwd) => {
-    const { dependencies } = require(path.join(__dirname, path.resolve('./package.json')));
-
     return {
         presets: [
             [

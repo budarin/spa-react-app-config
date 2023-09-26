@@ -13,7 +13,7 @@ module.exports = {
     // bail: 0,
 
     // The directory where Jest should store its cached dependency information
-    cacheDirectory: path.resolve('node_modules/.cache/jest/todo'),
+    // cacheDirectory: path.resolve(`node_modules/.cache/jest/spa-react-app-config`),
 
     // Automatically clear mock calls, instances, contexts and results before every test
     clearMocks: true,
