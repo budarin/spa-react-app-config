@@ -1,8 +1,9 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.21",
+    "version": "1.0.22",
     "description": "Configs for React SPA",
     "main": "index.js",
+    "types": "index.d.ts",
     "repository": "https://github.com/budarin/spa-react-app-config.git",
     "bugs": {
         "url": "https://github.com/budarin/spa-react-app-config/issues"
@@ -12,10 +13,6 @@
     "license": "MIT",
     "bin": {
         "srac-start": "./scripts/start.js"
-    },
-    "scripts": {
-        "npm-publish": "npm publish",
-        "upgrade deps": "yarn upgrade-interactive --latest;"
     },
     "dependencies": {
         "@babel/core": "^7.22.9",
@@ -79,5 +76,10 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+        "показать что будет отправлено в npm": "npm pack --dry-run",
+        "npm-publish": "npm publish",
+        "upgrade deps": "yarn upgrade-interactive --latest;"
     }
 }

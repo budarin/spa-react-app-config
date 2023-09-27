@@ -70,6 +70,7 @@ module.exports = {
     globals: {
         __DEV__: process.env['NODE_ENV'] !== 'production',
         __PROD__: process.env['NODE_ENV'] === 'production',
+        __TEST__: process.env['NODE_ENV'] === 'test',
         IS_REACT_ACT_ENVIRONMENT: true,
     },
 
