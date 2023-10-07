@@ -73,13 +73,13 @@ module.exports = require('@budarin/spa-react-app-config').playwrightConfig;
 в общем случае просто экспортируем импортированный из node_modules конфиг
 
 ```js
-module.exports = require('@budarin/spa-react-app-config').webpackConfigs.dev;
+module.exports = require('@budarin/spa-react-app-config').webpackConfigs.dev(__dirname);
 ```
 
 но если конфиг нужно кастомизировать, то делаем это так
 
 ```js
-const defaultConfig = require('@budarin/spa-react-app-config').webpackConfigs.dev;
+const defaultConfig = require('@budarin/spa-react-app-config').webpackConfigs.dev(__dirname);
 
 module.exports = {
     ...defaultConfig,
