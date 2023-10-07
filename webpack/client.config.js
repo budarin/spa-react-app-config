@@ -37,7 +37,8 @@ module.exports = (cwd) => {
             modules: ['node_modules', 'src'],
             plugins: [
                 new TsconfigPathsPlugin({
-                    configFile: path.join(cwd, './tsconfig.json'),
+                    // вычисляем путь к конфигу при инициализации webpack.config.js
+                    configFile: path.resolve('./tsconfig.json'),
                 }),
             ],
         },

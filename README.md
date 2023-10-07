@@ -25,7 +25,7 @@
 ### babel.config.js
 
 ```js
-module.exports = require('@budarin/spa-react-app-config').babelConfig(__dirname);
+module.exports = require('@budarin/spa-react-app-config').getBabelConfig(__dirname);
 ```
 
 ### prettier.config.js
@@ -73,13 +73,13 @@ module.exports = require('@budarin/spa-react-app-config').playwrightConfig;
 в общем случае просто экспортируем импортированный из node_modules конфиг
 
 ```js
-module.exports = require('@budarin/spa-react-app-config').webpackConfigs.dev(__dirname);
+module.exports = require('@budarin/spa-react-app-config').webpackConfigs.getDevConfig();
 ```
 
 но если конфиг нужно кастомизировать, то делаем это так
 
 ```js
-const defaultConfig = require('@budarin/spa-react-app-config').webpackConfigs.dev(__dirname);
+const defaultConfig = require('@budarin/spa-react-app-config').webpackConfigs.getDevConfig();
 
 module.exports = {
     ...defaultConfig,

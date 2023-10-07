@@ -1,5 +1,5 @@
 module.exports = {
-    babelConfig: require('../babel.config.js'),
+    getBabelConfig: require('../babel.config.js'),
     prettierConfig: require('../prettier.config.js'),
     eslintrc: require('../.eslintrc.js'),
     styleLintConfig: require('../stylelint.config.js'),
@@ -7,11 +7,11 @@ module.exports = {
     // playwrightConfig: require('./playwright.config.ts'),
     webpackPlugins: require('../webpack/plugins.js'),
     webpackConfigs: {
-        dev: require('../webpack/config.js'),
-        prod: require('../webpack/prod.config.js'),
-        client: require('../webpack/client.config.js'),
-        clientProd: require('../webpack/client.prod.config.js'),
-        sw: require('../webpack/sw.config.js'),
-        swProd: require('../webpack/sw.prod.config.js'),
+        getDevConfig: require('../webpack/config.js'),
+        getProdConfig: require('../webpack/prod.config.js'),
+        getClientConfig: require('../webpack/client.config.js'),
+        getClientProdConfig: require('../webpack/client.prod.config.js'),
+        getSwConfig: require('../webpack/sw.config.js'),
+        getSwProdConfig: require('../webpack/sw.prod.config.js'),
     },
 };
