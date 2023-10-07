@@ -2,8 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-module.exports = (cwd) => {
-    return {
+module.exports = {
         mode: 'development',
         devtool: 'inline-source-map',
         entry: './src/index.tsx',
@@ -36,10 +35,8 @@ module.exports = (cwd) => {
             ],
             modules: ['node_modules', 'src'],
             plugins: [
-                new TsconfigPathsPlugin({
-                    // вычисляем путь к конфигу при инициализации webpack.config.js
-                    configFile: path.resolve('./tsconfig.json'),
-                }),
+                // вычисляем путь к конфигу при инициализации webpack.config.js
+                new TsconfigPathsPlugin(),
             ],
         },
         module: {
@@ -106,4 +103,4 @@ module.exports = (cwd) => {
             historyApiFallback: true,
         },
     };
-};
+

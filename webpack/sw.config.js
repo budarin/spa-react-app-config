@@ -1,40 +1,36 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-module.exports = (cwd) => {
-    return {
-        mode: 'development',
-        devtool: false,
-        entry: './src/sw/index.ts',
-        output: {
-            path: path.resolve('./dist'),
-            filename: 'sw.js',
-        },
-        resolve: {
-            extensions: ['.ts', '.tsx', '.js', '.jsx', '.jsm', '.json', '.css', '.mp3', '.svg', '.png', '.gif'],
-            modules: ['node_modules', 'src'],
-            plugins: [
-                new TsconfigPathsPlugin({
-                    // вычисляем путь к конфигу при инициализации webpack.config.js
-                    configFile: path.resolve('./tsconfig.json'),
-                }),
-            ],
-        },
-        module: {
-            rules: [
-                {
-                    test: /\.(ts|tsx|js|jsx|json)$/,
-                    exclude: /node_modules/,
-                    use: [
-                        {
-                            loader: 'esbuild-loader',
-                            options: {
-                                target: 'esnext',
-                            },
+module.exports = {
+    mode: 'development',
+    devtool: false,
+    entry: './src/sw/index.ts',
+    output: {
+        path: path.resolve('./dist'),
+        filename: 'sw.js',
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.jsm', '.json', '.css', '.mp3', '.svg', '.png', '.gif'],
+        modules: ['node_modules', 'src'],
+        plugins: [
+            // вычисляем путь к конфигу при инициализации webpack.config.js
+            new TsconfigPathsPlugin(),
+        ],
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(ts|tsx|js|jsx|json)$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'esbuild-loader',
+                        options: {
+                            target: 'esnext',
                         },
-                    ],
-                },
-            ],
-        },
-    };
+                    },
+                ],
+            },
+        ],
+    },
 };
