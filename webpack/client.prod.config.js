@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 const TerserPlugin = require('terser-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -28,7 +29,6 @@ module.exports = {
         }),
     ],
     resolve: {
-        modules: ['node_modules', 'src'],
         extensions: [
             '.ts',
             '.tsx',
@@ -45,6 +45,8 @@ module.exports = {
             '.xml',
             '.woff2',
         ],
+        modules: ['node_modules', 'src'],
+        plugins: [new TsconfigPathsPlugin()],
     },
     module: {
         rules: [

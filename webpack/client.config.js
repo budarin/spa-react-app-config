@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -33,6 +34,7 @@ module.exports = {
             '.woff2',
         ],
         modules: ['node_modules', 'src'],
+        plugins: [new TsconfigPathsPlugin()],
     },
     module: {
         rules: [
