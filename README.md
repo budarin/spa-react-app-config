@@ -94,3 +94,12 @@ module.exports = {
     },
 };
 ```
+
+## CLI
+
+`srac`
+
+### Options
+
+-   install
+-   start
