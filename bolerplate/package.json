@@ -1,12 +1,12 @@
 {
     "lint-staged": {
-        "src/**/*.{js,ts,tsx}": [
+        "src/**/*.{js,jsx,ts,tsx}": [
             "tsc"
         ],
-        "src/**/*.{js,ts,tsx,json}": [
+        "src/**/*.{js,jsx,ts,tsx,!}": [
             "eslint"
         ],
-        "src/**/*.{js,jsx,ts,tsx}": [
+        "src/**/*.{js,jsx,ts,tsx,!!}": [
             "jest --changedFilesWithAncestor"
         ],
         "*.{js,jsx,ts,tsx,json,md,css,html}": [
