@@ -11,8 +11,10 @@ module.exports = {
     },
 
     extends: [
+        'airbnb',
         'eslint:recommended',
         'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
         'plugin:@typescript-eslint/strict',
         'plugin:import/recommended',
         'plugin:import/typescript',
