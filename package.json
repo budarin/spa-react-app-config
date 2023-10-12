@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.40",
+    "version": "1.0.41",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -55,6 +55,7 @@
         "html-webpack-plugin": "^5.5.3",
         "jest": "^29.6.2",
         "jest-environment-jsdom": "^29.6.2",
+        "lint-staged": "^14.0.1",
         "postcss": "^8.4.31",
         "postcss-loader": "^7.3.3",
         "postcss-pixels-to-rem": "^0.8.0",
