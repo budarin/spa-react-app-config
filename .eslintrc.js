@@ -70,6 +70,7 @@ module.exports = {
         camelcase: 'off',
         'max-len': 'off',
         'react/jsx-indent': 'off',
+        'operator-linebreak': 'off',
         'object-curly-newline': 'off',
         'implicit-arrow-linebreak': 'off',
         'import/no-mutable-exports': 'off',
