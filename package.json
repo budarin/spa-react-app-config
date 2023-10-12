@@ -12,7 +12,7 @@
     "author": "Vadim Budarin <budarin-vv@yandex.ru>",
     "license": "MIT",
     "bin": {
-        "srac-start": "./scripts/start.js"
+        "srac-setup": "./scripts/start.js"
     },
     "dependencies": {
         "@babel/core": "^7.23.2",
