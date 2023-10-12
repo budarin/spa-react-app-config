@@ -3,10 +3,10 @@
         "src/**/*.{js,ts,tsx}": [
             "tsc"
         ],
-        "src/**/*.{js,ts,json}": [
+        "src/**/*.{js,ts,tsx,json}": [
             "eslint"
         ],
-        "src/**/*.{js,ts}": [
+        "src/**/*.{js,jsx,ts,tsx}": [
             "jest --changedFilesWithAncestor"
         ],
         "*.{js,jsx,ts,tsx,json,md,css,html}": [
