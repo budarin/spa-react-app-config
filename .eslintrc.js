@@ -50,7 +50,11 @@ module.exports = {
             // только для тестов используем плагины для тестов
             files: '**/?(*.)+(spec|test).(js|ts|tsx)',
             plugins: ['jest'],
-            extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended', 'plugin:testing-library/react'],
+            extends: [
+                'plugin:jest/recommended',
+                'plugin:jest-dom/recommended',
+                'plugin:testing-library/react',
+            ],
         },
         {
             // enable the rule specifically for TypeScript files
@@ -62,6 +66,32 @@ module.exports = {
     ],
 
     rules: {
+        indent: 'off',
+        camelcase: 'off',
+        'max-len': 'off',
+        'react/jsx-indent': 'off',
+        'object-curly-newline': 'off',
+        'implicit-arrow-linebreak': 'off',
+        'import/no-mutable-exports': 'off',
+        'react/jsx-filename-extension': 'off',
+        'import/prefer-default-export': 'off',
+        'import/no-extraneous-dependencies': 'off',
+        'no-plusplus': [
+            'error',
+            {
+                allowForLoopAfterthoughts: true,
+            },
+        ],
+        'no-use-before-define': [
+            'error',
+            {
+                functions: true,
+                classes: true,
+                variables: true,
+                allowNamedExports: false,
+            },
+        ],
+
         'react/prop-types': 'off',
         '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
         '@typescript-eslint/explicit-function-return-type': 'off',
