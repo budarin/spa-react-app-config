@@ -1,0 +1,17 @@
+{
+    "extends": "./node_modules/@budarin/spa-react-app-config/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "core/*": ["core/*"],
+            "contracts/*": ["core/contracts/*"],
+            "application/*": ["core/application/*"],
+            "domain/*": ["core/domain/*"],
+            "store/*": ["core/domain/store/*"],
+            "services/*": ["services/*"],
+            "ui/*": ["ui/*"],
+            "utils/*": ["utils/*"]
+        }
+    },
+    "include": ["src"]
+}

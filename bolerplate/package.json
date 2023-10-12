@@ -1,0 +1,29 @@
+{
+    "lint-staged": {
+        "src/**/*.{js,ts,tsx}": [
+            "tsc"
+        ],
+        "src/**/*.{js,ts,json}": [
+            "eslint"
+        ],
+        "src/**/*.{js,ts}": [
+            "jest --changedFilesWithAncestor"
+        ],
+        "*.{js,jsx,ts,tsx,json,md,css,html}": [
+            "prettier --write"
+        ]
+    },
+    "dependencies": {
+        "@budarin/spa-react-app-config": "latest"
+    },
+    "scripts": {
+        "start": "sh ./tools/start.sh",
+        "lint": "sh ./tools/lint.sh",
+        "ts-lint": "sh ./tools/ts-lint.sh",
+        "es-lint": "sh ./tools/es-lint.sh",
+        "test": "sh ./tools/test.sh",
+        "список всех правил eslint": "sh ./tools/eslint-show-active-rules.sh",
+        "какой eslint плагин тупит?": "sh ./tools/eslint-which-plugin-is-stupid.sh",
+        "upgrade deps": "sh ./tools/upgrade-deps.sh"
+    }
+}
