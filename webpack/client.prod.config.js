@@ -37,10 +37,14 @@ module.exports = {
             '.jsm',
             '.json',
             '.css',
-            '.mp3',
-            '.svg',
             '.png',
+            '.svg',
+            '.jpg',
+            '.jpeg',
             '.gif',
+            '.ogg',
+            '.mp3',
+            '.wav',
             '.ico',
             '.xml',
             '.woff2',
@@ -53,6 +57,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav|ico|xml|woff2)$/i,
+                type: 'asset/resource',
+            },
             {
                 test: /\.(ts|tsx|js|jsx|json)$/,
                 exclude: /node_modules/,

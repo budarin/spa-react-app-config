@@ -10,7 +10,26 @@ module.exports = {
         filename: 'sw.js',
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.jsm', '.json', '.css', '.mp3', '.svg', '.png', '.gif'],
+        extensions: [
+            '.ts',
+            '.tsx',
+            '.js',
+            '.jsx',
+            '.jsm',
+            '.json',
+            '.css',
+            '.png',
+            '.svg',
+            '.jpg',
+            '.jpeg',
+            '.gif',
+            '.ogg',
+            '.mp3',
+            '.wav',
+            '.ico',
+            '.xml',
+            '.woff2',
+        ],
         modules: ['node_modules', 'src'],
         plugins: [
             // вычисляем путь к конфигу при инициализации webpack.config.js
@@ -19,6 +38,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav|ico|xml|woff2)$/i,
+                type: 'asset/resource',
+            },
             {
                 test: /\.(ts|tsx|js|jsx|json)$/,
                 exclude: /node_modules/,
