@@ -7,7 +7,7 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 module.exports = {
     mode: 'production',
     devtool: false,
-    entry: './src/index.tsx',
+    entry: './src/index.ts',
     cache: {
         type: 'filesystem',
     },
