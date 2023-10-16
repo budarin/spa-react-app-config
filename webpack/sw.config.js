@@ -9,6 +9,14 @@ module.exports = {
         path: path.resolve('./dist'),
         filename: 'sw.js',
     },
+    plugins: [
+        new webpack.DefinePlugin({
+            __DEBUG__: process.env['DEBUG'] === 'true',
+            __DEV__: process.env['NODE_ENV'] !== 'production',
+            __PROD__: process.env['NODE_ENV'] === 'production',
+            __TEST__: process.env['NODE_ENV'] === 'test',
+        }),
+    ],
     resolve: {
         extensions: [
             '.ts',
