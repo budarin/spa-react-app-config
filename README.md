@@ -97,9 +97,8 @@ module.exports = {
 
 ## CLI
 
-`srac`
+`spa-react-app-config`
 
 ### Options
 
 -   install
--   start
