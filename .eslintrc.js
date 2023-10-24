@@ -80,6 +80,7 @@ module.exports = {
         'react/jsx-indent': 'off',
         'operator-linebreak': 'off',
         'object-curly-newline': 'off',
+        'function-paren-newline': 'off',
         'implicit-arrow-linebreak': 'off',
         'import/no-mutable-exports': 'off',
         'react/jsx-filename-extension': 'off',
