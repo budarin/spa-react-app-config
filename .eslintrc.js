@@ -67,15 +67,7 @@ module.exports = {
 
     rules: {
         indent: 'off',
-        camelcase: [
-            'error',
-            {
-                properties: 'never',
-                ignoreDestructuring: false,
-                ignoreImports: false,
-                ignoreGlobals: false,
-            },
-        ],
+        camelcase: 'off',
         'max-len': 'off',
         'react/jsx-indent': 'off',
         'operator-linebreak': 'off',
