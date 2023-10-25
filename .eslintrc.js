@@ -97,6 +97,15 @@ module.exports = {
         'react/prop-types': 'off',
         '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
         '@typescript-eslint/explicit-function-return-type': 'off',
+
+        // Note: you must disable the base rule as it can report incorrect errors
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                varsIgnorePattern: '^_',
+            },
+        ],
     },
 
     ignorePatterns: ['*.js', '!./src'],
