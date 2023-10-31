@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.60",
+    "version": "1.0.61",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -24,8 +24,9 @@
         "@testing-library/jest-dom": "^6.1.4",
         "@testing-library/react": "^14.0.0",
         "@testing-library/react-hooks": "^8.0.1",
+        "@testing-library/user-event": "^14.5.1",
         "@types/jest": "^29.5.7",
-        "@types/node": "^20.8.9",
+        "@types/node": "^20.8.10",
         "@types/react": "^18.2.33",
         "@types/react-dom": "^18.2.14",
         "@types/serviceworker": "^0.0.76",
@@ -34,7 +35,7 @@
         "ajv": "^8.12.0",
         "babel-loader": "^9.1.2",
         "browserslist": "^4.22.1",
-        "caniuse-lite": "^1.0.30001558",
+        "caniuse-lite": "^1.0.30001559",
         "copy-webpack-plugin": "^11.0.0",
         "core-js": "^3.33.2",
         "css-loader": "^6.8.1",
@@ -77,7 +78,7 @@
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1",
-        "zustand": "^4.4.4",
+        "zustand": "^4.4.5",
         "zx": "^7.2.2"
     },
     "publishConfig": {
