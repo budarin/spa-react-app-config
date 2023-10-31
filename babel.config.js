@@ -2,6 +2,7 @@ const path = require('path');
 const { dependencies } = require(path.resolve(__dirname, './package.json'));
 
 module.exports = {
+    comments: true,
     presets: [
         [
             '@babel/preset-env',
@@ -24,4 +25,9 @@ module.exports = {
         ],
         '@babel/preset-typescript',
     ],
+    env: {
+        production: {
+            plugins: [['react-remove-properties', { properties: ['data-test-id'] }]],
+        },
+    },
 };
