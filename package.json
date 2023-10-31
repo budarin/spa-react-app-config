@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.59",
+    "version": "1.0.60",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -23,6 +23,7 @@
         "@bem-react/classname": "^1.6.0",
         "@testing-library/jest-dom": "^6.1.4",
         "@testing-library/react": "^14.0.0",
+        "@testing-library/react-hooks": "^8.0.1",
         "@types/jest": "^29.5.7",
         "@types/node": "^20.8.9",
         "@types/react": "^18.2.33",
