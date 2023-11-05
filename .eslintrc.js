@@ -18,7 +18,7 @@ module.exports = {
         'plugin:@typescript-eslint/strict',
         'plugin:jsx-a11y/recommended',
         'plugin:sonarjs/recommended',
-        'plugin:boundaries/recommended',
+        'plugin:boundaries/strict',
     ],
 
     plugins: ['@typescript-eslint', '@babel'],
