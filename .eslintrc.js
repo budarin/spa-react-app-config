@@ -116,6 +116,15 @@ module.exports = {
                     '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
             },
         ],
+
+        'import/no-mutable-exports': 'off',
+        'import/prefer-default-export': 'off',
+        'import/no-extraneous-dependencies': [
+            'error',
+            {
+                packageDir: ['./', './node_modules/@budarin/spa-react-app-config'],
+            },
+        ],
     },
 
     ignorePatterns: ['*.js', '!./src'],
