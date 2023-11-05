@@ -16,10 +16,9 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
         'plugin:@typescript-eslint/strict',
-        'plugin:import/recommended',
-        'plugin:import/typescript',
         'plugin:jsx-a11y/recommended',
         'plugin:sonarjs/recommended',
+        'plugin:boundaries/recommended',
     ],
 
     plugins: ['@typescript-eslint', '@babel'],
@@ -37,11 +36,6 @@ module.exports = {
     settings: {
         react: {
             version: 'detect',
-        },
-        'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
-        'import/resolver': {
-            typescript: true,
-            node: true,
         },
     },
 
@@ -74,10 +68,7 @@ module.exports = {
         'object-curly-newline': 'off',
         'function-paren-newline': 'off',
         'implicit-arrow-linebreak': 'off',
-        'import/no-mutable-exports': 'off',
         'react/jsx-filename-extension': 'off',
-        'import/prefer-default-export': 'off',
-        'import/no-extraneous-dependencies': 'off',
         'no-plusplus': [
             'error',
             {
