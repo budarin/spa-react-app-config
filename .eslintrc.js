@@ -21,7 +21,7 @@ module.exports = {
         'plugin:boundaries/strict',
     ],
 
-    plugins: ['@typescript-eslint', '@babel'],
+    plugins: ['@typescript-eslint', '@babel', 'boundaries'],
 
     parser: '@typescript-eslint/parser',
 
@@ -39,7 +39,9 @@ module.exports = {
         },
         'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
         'import/resolver': {
-            typescript: true,
+            typescript: {
+                alwaysTryTypes: true,
+            },
             node: true,
         },
     },
