@@ -10,6 +10,8 @@ module.exports = {
         serviceworker: true,
     },
 
+    plugins: ['@typescript-eslint', '@babel', 'boundaries'],
+
     extends: [
         'airbnb',
         'eslint:recommended',
@@ -20,8 +22,6 @@ module.exports = {
         'plugin:sonarjs/recommended',
         'plugin:boundaries/strict',
     ],
-
-    plugins: ['@typescript-eslint', '@babel', 'boundaries'],
 
     parser: '@typescript-eslint/parser',
 
