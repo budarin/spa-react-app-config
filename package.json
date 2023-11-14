@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.86",
+    "version": "1.0.87",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -35,7 +35,7 @@
         "babel-loader": "^9.1.2",
         "babel-plugin-react-remove-properties": "^0.3.0",
         "browserslist": "^4.22.1",
-        "caniuse-lite": "^1.0.30001561",
+        "caniuse-lite": "^1.0.30001562",
         "copy-webpack-plugin": "^11.0.0",
         "core-js": "^3.33.2",
         "css-loader": "^6.8.1",
