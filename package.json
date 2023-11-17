@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.89",
+    "version": "1.0.90",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -31,7 +31,6 @@
         "@types/serviceworker": "^0.0.76",
         "@typescript-eslint/eslint-plugin": "^6.11.0",
         "@typescript-eslint/parser": "^6.11.0",
-        "ajv": "^8.12.0",
         "babel-loader": "^9.1.2",
         "babel-plugin-react-remove-properties": "^0.3.0",
         "browserslist": "^4.22.1",
