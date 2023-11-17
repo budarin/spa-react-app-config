@@ -49,7 +49,11 @@ module.exports = {
     overrides: [
         {
             // только для тестов используем плагины для тестов
-            files: '**/?(*.)+(spec|test).(js|ts|tsx)',
+            files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+            env: {
+                node: true,
+                jest: true,
+            },
             plugins: ['jest'],
             extends: [
                 'plugin:jest/recommended',
@@ -62,6 +66,12 @@ module.exports = {
             files: ['*.ts', '*.mts', '*.cts', '*.tsx'],
             rules: {
                 '@typescript-eslint/explicit-function-return-type': 'error',
+            },
+        },
+        {
+            files: ['**/*.js', '!src/**/*'],
+            env: {
+                node: true,
             },
         },
     ],
