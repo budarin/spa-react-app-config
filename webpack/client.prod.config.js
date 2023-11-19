@@ -1,8 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const TerserPlugin = require('terser-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const { optimizationConfig } = require('./optimizationConfig.js');
 
 module.exports = {
     mode: 'production',
@@ -16,11 +16,7 @@ module.exports = {
         filename: '[name].[contenthash].js',
         compareBeforeEmit: true,
     },
-    optimization: {
-        minimize: true,
-        minimizer: [new TerserPlugin()],
-        concatenateModules: true,
-    },
+    optimization: optimizationConfig,
     plugins: [
         new webpack.DefinePlugin({
             __DEBUG__: process.env['DEBUG'] === 'true',

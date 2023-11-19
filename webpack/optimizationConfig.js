@@ -1,0 +1,62 @@
+const TerserPlugin = require('terser-webpack-plugin');
+
+const reactModules = {
+    'react-dom': true,
+    react: true,
+    scheduler: true,
+};
+const isReactModules = (moduleName) => Boolean(reactModules[moduleName]);
+
+const optimizationConfig = {
+    minimize: true,
+    mergeDuplicateChunks: true,
+    runtimeChunk: {
+        name: 'runtime',
+    },
+    splitChunks: {
+        chunks: 'all',
+        maxInitialRequests: Infinity,
+        minSize: 0,
+        cacheGroups: {
+            default: false,
+            defaultVendors: false,
+            npms: {
+                test: /[\\/]node_modules[\\/]/,
+                name(module) {
+                    const packageName = module.context.match(
+                        /[\\/]node_modules[\\/](.*?)([\\/]|$)/,
+                    )[1];
+
+                    // console.log('---packageName---:', packageName);
+
+                    if (isReactModules(packageName)) {
+                        return 'react';
+                    }
+
+                    return 'npms';
+                },
+                chunks: 'all',
+                enforce: true,
+            },
+        },
+    },
+};
+
+optimizationConfig.minimizer = [
+    new TerserPlugin({
+        parallel: true,
+        terserOptions: {
+            compress: true,
+            mangle: true,
+            keep_classnames: false,
+            keep_fnames: false,
+            output: {
+                comments: false,
+            },
+        },
+    }),
+];
+
+module.exports = {
+    optimizationConfig,
+};
