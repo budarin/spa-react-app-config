@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+
+const TerserPlugin = require('terser-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
@@ -9,6 +11,23 @@ module.exports = {
     output: {
         path: path.resolve('./dist'),
         filename: 'sw.js',
+    },
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                parallel: true,
+                terserOptions: {
+                    compress: true,
+                    mangle: true,
+                    keep_classnames: false,
+                    keep_fnames: false,
+                    output: {
+                        comments: false,
+                    },
+                },
+            }),
+        ],
     },
     plugins: [
         new webpack.DefinePlugin({
