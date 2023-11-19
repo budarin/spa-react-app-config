@@ -8,5 +8,4 @@ module.exports = {
     CopyPlugin,
     WebpackAssetsManifest,
     TerserPlugin,
-    CssMinimizePlugin,
 };
