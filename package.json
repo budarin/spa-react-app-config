@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.98",
+    "version": "1.0.99",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -38,6 +38,7 @@
         "copy-webpack-plugin": "^11.0.0",
         "core-js": "^3.33.3",
         "css-loader": "^6.8.1",
+        "cssnano": "^6.0.1",
         "esbuild-loader": "^4.0.2",
         "eslint": "^8.54.0",
         "eslint-config-airbnb": "^19.0.4",
