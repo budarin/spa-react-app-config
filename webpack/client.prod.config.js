@@ -1,8 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { optimizationConfig } = require('./optimizationConfig.js');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 
 module.exports = {
     mode: 'production',
@@ -23,6 +24,12 @@ module.exports = {
             __DEV__: process.env['NODE_ENV'] !== 'production',
             __PROD__: process.env['NODE_ENV'] === 'production',
             __TEST__: process.env['NODE_ENV'] === 'test',
+        }),
+
+        new StatoscopeWebpackPlugin({
+            name: 'Client',
+            saveTo: path.resolve(`./dist/client-statoscope.html`),
+            open: false,
         }),
     ],
     resolve: {

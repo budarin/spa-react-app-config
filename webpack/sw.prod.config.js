@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 const TerserPlugin = require('terser-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 
 module.exports = {
     mode: 'production',
@@ -35,6 +36,12 @@ module.exports = {
             __DEV__: process.env['NODE_ENV'] !== 'production',
             __PROD__: process.env['NODE_ENV'] === 'production',
             __TEST__: process.env['NODE_ENV'] === 'test',
+        }),
+
+        new StatoscopeWebpackPlugin({
+            name: 'SW',
+            saveTo: path.resolve(`./dist/sw-statoscope.html`),
+            open: false,
         }),
     ],
     resolve: {
