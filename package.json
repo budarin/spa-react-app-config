@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.102",
+    "version": "1.0.103",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -29,7 +29,7 @@
         "@types/node": "^20.10.0",
         "@types/react": "^18.2.38",
         "@types/react-dom": "^18.2.17",
-        "@types/serviceworker": "^0.0.78",
+        "@types/serviceworker": "^0.0.79",
         "@typescript-eslint/eslint-plugin": "^6.12.0",
         "@typescript-eslint/parser": "^6.12.0",
         "babel-loader": "^9.1.2",
