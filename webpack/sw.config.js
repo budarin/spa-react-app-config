@@ -2,6 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
+const srcPath = path.resolve('./src');
+
 module.exports = {
     mode: 'development',
     devtool: false,
@@ -53,7 +55,21 @@ module.exports = {
             },
             {
                 test: /\.(ts|tsx|js|jsx|json)$/,
-                exclude: /node_modules/,
+                exclude: (filePath) => {
+                    if (!filePath) {
+                        return false;
+                    }
+
+                    if (
+                        filePath.includes('/node_modules/@budarin/') ||
+                        filePath.startsWith(srcPath)
+                    ) {
+                        // console.log('include', filePath);
+                        return false;
+                    }
+
+                    return true;
+                },
                 use: [
                     {
                         loader: 'esbuild-loader',

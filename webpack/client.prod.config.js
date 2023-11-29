@@ -5,6 +5,8 @@ const { optimizationConfig } = require('./optimizationConfig.js');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 
+const srcPath = path.resolve('./src');
+
 module.exports = {
     mode: 'production',
     devtool: false,
@@ -67,7 +69,21 @@ module.exports = {
             },
             {
                 test: /\.(ts|tsx|js|jsx|json)$/,
-                exclude: /node_modules/,
+                exclude: (filePath) => {
+                    if (!filePath) {
+                        return false;
+                    }
+
+                    if (
+                        filePath.includes('/node_modules/@budarin/') ||
+                        filePath.startsWith(srcPath)
+                    ) {
+                        // console.log('include', filePath);
+                        return false;
+                    }
+
+                    return true;
+                },
                 use: [
                     {
                         loader: 'babel-loader',
