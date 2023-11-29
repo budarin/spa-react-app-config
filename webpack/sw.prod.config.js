@@ -5,6 +5,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 
+const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
+
 module.exports = {
     mode: 'production',
     devtool: false,
@@ -80,7 +82,18 @@ module.exports = {
             },
             {
                 test: /\.(ts|tsx|js|jsx|json)$/,
-                exclude: /node_modules/,
+                exclude: (filePath) => {
+                    if (!filePath) {
+                        return true;
+                    }
+
+                    if (filePath.startsWith(budarinPackagesPath)) {
+                        // console.log('included', filePath)
+                        return false;
+                    }
+
+                    return /node_modules/.test(filePath);
+                },
                 use: [
                     {
                         loader: 'babel-loader',
