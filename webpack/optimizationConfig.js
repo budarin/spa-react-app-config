@@ -7,6 +7,8 @@ const reactModules = {
 };
 const isReactModules = (moduleName) => Boolean(reactModules[moduleName]);
 
+const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
+
 const optimizationConfig = {
     minimize: true,
     mergeDuplicateChunks: true,
@@ -31,6 +33,10 @@ const optimizationConfig = {
 
                     if (isReactModules(packageName)) {
                         return 'react';
+                    }
+
+                    if (packageName === '@budarin') {
+                        return 'budarin';
                     }
 
                     return 'npms';
