@@ -75,6 +75,7 @@ module.exports = {
                         return true;
                     }
 
+                    // включаем в сборку мои пакеты чтобы удалить в них logger.debug
                     if (filePath.startsWith(budarinPackagesPath)) {
                         // console.log('included', filePath)
                         return false;
