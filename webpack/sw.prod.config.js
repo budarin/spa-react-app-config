@@ -100,7 +100,7 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            cacheDirectory: path.resolve('node_modules/.cache/client'),
+                            cacheDirectory: path.resolve('node_modules/.cache/sw'),
                         },
                     },
                 ],
