@@ -72,6 +72,7 @@ module.exports = {
         __DEV__: process.env['NODE_ENV'] !== 'production',
         __PROD__: process.env['NODE_ENV'] === 'production',
         __TEST__: process.env['NODE_ENV'] === 'test',
+        __LOG_LEVEL__: process.env['LOG_LEVEL'] || 'info',
         IS_REACT_ACT_ENVIRONMENT: true,
     },
 
