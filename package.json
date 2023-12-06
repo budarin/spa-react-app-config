@@ -90,8 +90,8 @@
     },
     "scripts": {
         "показать что будет отправлено в npm": "npm pack --dry-run",
+        "patch-version": "yarn version --patch",
         "npm-publish": "npm publish",
-        "upgrade deps": "yarn upgrade-interactive --latest;",
-        "patch-version": "yarn version --patch"
+        "upgrade deps": "yarn upgrade-interactive --latest;"
     }
 }
