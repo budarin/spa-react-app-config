@@ -91,6 +91,7 @@
     "scripts": {
         "показать что будет отправлено в npm": "npm pack --dry-run",
         "npm-publish": "npm publish",
-        "upgrade deps": "yarn upgrade-interactive --latest;"
+        "upgrade deps": "yarn upgrade-interactive --latest;",
+        "patch-version": "yarn version --patch"
     }
 }
