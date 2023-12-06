@@ -12,6 +12,7 @@ const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
 
 const optimizationConfig = {
     minimize: true,
+    sideEffects: true,
     mergeDuplicateChunks: true,
     runtimeChunk: {
         name: 'runtime',
@@ -52,7 +53,6 @@ const optimizationConfig = {
 optimizationConfig.minimizer = [
     new TerserPlugin({
         parallel: true,
-        sideEffects: true,
         extractComments: false,
         terserOptions: {
             compress: {
