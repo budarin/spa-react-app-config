@@ -13,6 +13,7 @@ const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
 const optimizationConfig = {
     minimize: true,
     sideEffects: true,
+    providedExports: true,
     mergeDuplicateChunks: true,
     runtimeChunk: {
         name: 'runtime',
