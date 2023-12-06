@@ -52,6 +52,7 @@ const optimizationConfig = {
 optimizationConfig.minimizer = [
     new TerserPlugin({
         parallel: true,
+        sideEffects: true,
         extractComments: false,
         terserOptions: {
             compress: {
