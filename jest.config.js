@@ -72,7 +72,6 @@ module.exports = {
         __DEV__: process.env['NODE_ENV'] !== 'production',
         __PROD__: process.env['NODE_ENV'] === 'production',
         __TEST__: process.env['NODE_ENV'] === 'test',
-        __LIGHT_SCHEMA__: process.env['__LIGHT_SCHEMA__'],
         IS_REACT_ACT_ENVIRONMENT: true,
     },
 

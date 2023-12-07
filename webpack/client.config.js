@@ -15,7 +15,6 @@ module.exports = {
             __DEV__: process.env['NODE_ENV'] !== 'production',
             __PROD__: process.env['NODE_ENV'] === 'production',
             __TEST__: process.env['NODE_ENV'] === 'test',
-            __LIGHT_SCHEMA__: JSON.stringify(process.env['LIGHT_SCHEMA']),
         }),
     ],
     resolve: {
