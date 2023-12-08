@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackAssetsManifest = require('webpack-assets-manifest');
@@ -8,4 +10,5 @@ module.exports = {
     CopyPlugin,
     WebpackAssetsManifest,
     TerserPlugin,
+    DefinePlugin: webpack.DefinePlugin,
 };

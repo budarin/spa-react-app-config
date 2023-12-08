@@ -12,6 +12,8 @@ const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
 
 const optimizationConfig = {
     minimize: true,
+    sideEffects: true,
+    providedExports: true,
     mergeDuplicateChunks: true,
     runtimeChunk: {
         name: 'runtime',
@@ -54,7 +56,13 @@ optimizationConfig.minimizer = [
         parallel: true,
         extractComments: false,
         terserOptions: {
-            compress: true,
+            compress: {
+                drop_console: true,
+                drop_debugger: true,
+                hoist_funs: true,
+                module: true,
+                toplevel: true,
+            },
             mangle: true,
             keep_classnames: false,
             keep_fnames: false,
