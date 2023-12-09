@@ -4,6 +4,6 @@ module.exports = {
     rules: {
         'selector-class-pattern': null,
         'custom-property-pattern': null,
-        'liberty/use-logical-spec': 'always',
+        'csstools/use-logical': 'always',
     },
 };
