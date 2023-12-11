@@ -10,7 +10,7 @@ const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
 module.exports = {
     mode: 'production',
     devtool: false,
-    entry: './src/providers/sw/index.ts',
+    entry: './src/sw/index.ts',
     output: {
         path: path.resolve('./dist'),
         filename: 'sw.js',
