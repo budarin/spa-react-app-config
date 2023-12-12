@@ -18,6 +18,10 @@ module.exports = {
         path: path.resolve('./dist'),
         filename: '[name].[contenthash].js',
         compareBeforeEmit: true,
+        // нужно для вызова воркера в коде
+        trustedTypes: {
+            policyName: 'webpack-tt',
+        },
     },
     optimization: optimizationConfig,
     plugins: [
