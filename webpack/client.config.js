@@ -8,6 +8,9 @@ module.exports = {
     entry: './src/index.ts',
     output: {
         path: path.resolve('./dist'),
+        trustedTypes: {
+            policyName: 'webpack-tt',
+        },
     },
     plugins: [
         new webpack.DefinePlugin({
