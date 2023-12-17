@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.133",
+    "version": "1.0.134",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
