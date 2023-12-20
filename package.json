@@ -21,6 +21,7 @@
         "@babel/preset-react": "^7.22.5",
         "@babel/preset-typescript": "^7.23.2",
         "@bem-react/classname": "^1.6.0",
+        "@budarin/browser-pino-dev-logger": "^1.0.7",
         "@budarin/browser-pino-logger": "^1.0.4",
         "@budarin/deep-equal": "^1.0.0",
         "@budarin/json-rpc-interface": "^1.0.3",

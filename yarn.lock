@@ -1138,6 +1138,13 @@
   resolved "https://registry.yarnpkg.com/@bem-react/classname/-/classname-1.6.0.tgz#dbd1fc337b50fe726dae79c1c8184d7016aa6ccf"
   integrity sha512-SFBwUHMcb7TFFK5ld88+JhecoEun3/kHZ6KvLDjj3w5hv/tfRV8mtGHA8N42uMctXLF4bPEcr96xwXXcRFuweg==
 
+"@budarin/browser-pino-dev-logger@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-dev-logger/-/browser-pino-dev-logger-1.0.7.tgz#b97e717d79976a9907eb188f2c22dde65a0b7ee8"
+  integrity sha512-VHEXClpJkFY342snqKswKarNcaKc4ke/Uazs44Yve6INxyGsxDu0xoZRB0vUdptCjkrvD5gRedhL0jCfHa80aw==
+  dependencies:
+    pino "^8.16.2"
+
 "@budarin/browser-pino-logger@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@budarin/browser-pino-logger/-/browser-pino-logger-1.0.4.tgz#1544e20059ce766daa4186a64316f3bede3ab7b2"
