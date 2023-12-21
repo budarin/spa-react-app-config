@@ -1157,10 +1157,10 @@
   resolved "https://registry.yarnpkg.com/@budarin/deep-equal/-/deep-equal-1.0.0.tgz#6b44940fac656b98abd713f880acfb01b8f5a913"
   integrity sha512-8uZe4NmOETs107+m5WtTPmOBPpt97q+uNfLTWKsRYaP3lKvOfMJz7Q4JyyOFGkW8hLtsRYIBiJeGyT6HTfMEcQ==
 
-"@budarin/json-rpc-interface@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@budarin/json-rpc-interface/-/json-rpc-interface-1.0.3.tgz#6368c7ece9ed5bfb16bf57d462f6a47a2b9dfd8e"
-  integrity sha512-hC6q4XtsKr4slZhqZQLSCOdGUqnWuwuHW6l/U5O4O+tfQBc4rnogXzcqcuUARu0xV0/95cZVRkWqsOsHEpTOOg==
+"@budarin/json-rpc-interface@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@budarin/json-rpc-interface/-/json-rpc-interface-1.0.4.tgz#0c90a47458c43e6c8b32a4702bf0b405562a19b1"
+  integrity sha512-WJFCdG0ATr3rfsMDay8P9CBBtVyZSm1dXOMlrbQdKdVY/T/DMqsjR+13BBi52VxSExuS0CsjXdkQIZsxC+hbWw==
 
 "@budarin/json-rpc-request@^1.0.9":
   version "1.0.9"
@@ -1172,10 +1172,10 @@
   resolved "https://registry.yarnpkg.com/@budarin/local-store/-/local-store-1.0.9.tgz#b54ddbcea97263fc972d262cd30ed7bca7b847c1"
   integrity sha512-IWqJijmqJmujgPX06y9qnEESZ3gYMyXfLuYsF7GQkrQfZGDtj+3K9LPVoLiWcf0k6RNkWt9qNlVaAt9+DmrfkQ==
 
-"@budarin/no-ops-service@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@budarin/no-ops-service/-/no-ops-service-1.0.2.tgz#a3aef030a1211ab2b979d9ab4e34b23cac2452f4"
-  integrity sha512-w7ZA9hKVKrYhCWBCajCQL8ptSEEC8ec/AE2UX6oIaMQmNXRUMSs2/97iIDnR9ygGUh9d5asmnAIFARAesf5h/A==
+"@budarin/no-ops-service@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@budarin/no-ops-service/-/no-ops-service-1.0.4.tgz#675fff7d4b484e1ac21f0ed62e31c86be0f67bde"
+  integrity sha512-vYoYcwKlLkxuO2cjdNi4Hi8ZjadpP+raTj/JauVzQ2SBdwd5suiWm5t91H+OrI2sb3BcAPWmGHrh+VDrfWcPuQ==
 
 "@budarin/service-stub@^1.0.2":
   version "1.0.2"
