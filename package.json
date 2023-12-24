@@ -47,7 +47,7 @@
         "babel-loader": "^9.1.2",
         "babel-plugin-react-remove-properties": "^0.3.0",
         "browserslist": "^4.22.2",
-        "caniuse-lite": "^1.0.30001570",
+        "caniuse-lite": "^1.0.30001571",
         "copy-webpack-plugin": "^11.0.0",
         "core-js": "^3.34.0",
         "css-loader": "^6.8.1",
