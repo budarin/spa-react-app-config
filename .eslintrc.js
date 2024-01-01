@@ -81,6 +81,7 @@ module.exports = {
         camelcase: 'off',
         'max-len': 'off',
         'react/jsx-indent': 'off',
+        'react/jsx-indent-props': 'off',
         'operator-linebreak': 'off',
         'object-curly-newline': 'off',
         'function-paren-newline': 'off',
