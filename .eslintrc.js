@@ -80,13 +80,22 @@ module.exports = {
         indent: 'off',
         camelcase: 'off',
         'max-len': 'off',
-        'react/jsx-indent': 'off',
-        'react/jsx-indent-props': 'off',
         'operator-linebreak': 'off',
         'object-curly-newline': 'off',
         'function-paren-newline': 'off',
         'implicit-arrow-linebreak': 'off',
+
+        'react/jsx-indent': 'off',
+        'react/jsx-indent-props': 'off',
         'react/jsx-filename-extension': 'off',
+        'react/require-default-props': [
+            'error',
+            {
+                ignoreFunctionalComponents: false,
+            },
+        ],
+        'react/prop-types': 'off',
+
         'no-plusplus': [
             'error',
             {
@@ -103,7 +112,6 @@ module.exports = {
             },
         ],
 
-        'react/prop-types': 'off',
         '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
         '@typescript-eslint/explicit-function-return-type': 'off',
 
