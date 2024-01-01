@@ -91,7 +91,7 @@ module.exports = {
         'react/require-default-props': [
             'error',
             {
-                ignoreFunctionalComponents: false,
+                functions: false,
             },
         ],
         'react/prop-types': 'off',
