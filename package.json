@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.140",
+    "version": "1.0.139",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -15,9 +15,9 @@
         "spa-react-app-config": "./bin/cli.js"
     },
     "dependencies": {
-        "@babel/core": "7.23.6",
+        "@babel/core": "7.23.7",
         "@babel/eslint-plugin": "7.23.5",
-        "@babel/preset-env": "7.23.6",
+        "@babel/preset-env": "7.23.7",
         "@babel/preset-react": "^7.22.5",
         "@babel/preset-typescript": "^7.23.2",
         "@bem-react/classname": "^1.6.0",
@@ -33,10 +33,10 @@
         "@statoscope/webpack-plugin": "^5.28.2",
         "@testing-library/jest-dom": "^6.1.6",
         "@testing-library/react": "^14.1.2",
-        "@testing-library/user-event": "^14.5.1",
+        "@testing-library/user-event": "^14.5.2",
         "@types/dom-screen-wake-lock": "^1.0.3",
         "@types/jest": "^29.5.11",
-        "@types/node": "^20.10.5",
+        "@types/node": "^20.10.6",
         "@types/react": "^18.2.46",
         "@types/react-dom": "^18.2.18",
         "@types/serviceworker": "^0.0.82",
