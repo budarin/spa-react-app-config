@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         path: path.resolve('./dist'),
-        filename: '[name].[contenthash][ext]',
+        filename: '[name].[contenthash].js',
         assetModuleFilename: '[name].[contenthash][ext]',
         compareBeforeEmit: true,
         // нужно для вызова воркера в коде
