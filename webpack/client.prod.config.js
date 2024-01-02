@@ -17,7 +17,7 @@ module.exports = {
     output: {
         path: path.resolve('./dist'),
         filename: '[name].[contenthash].js',
-        assetModuleFilename: 'assets/[hash][ext]',
+        assetModuleFilename: '[name].[contenthash][ext]',
         compareBeforeEmit: true,
         // нужно для вызова воркера в коде
         trustedTypes: {
@@ -70,7 +70,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav|ico|xml|woff2)$/i,
-                type: 'asset/resource',
+                type: 'asset',
             },
             {
                 test: /\.(ts|tsx|js|jsx|json)$/,
