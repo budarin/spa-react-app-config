@@ -17,6 +17,7 @@ module.exports = {
     output: {
         path: path.resolve('./dist'),
         filename: '[name].[contenthash].js',
+        assetModuleFilename: 'assets/[hash][ext]',
         compareBeforeEmit: true,
         // нужно для вызова воркера в коде
         trustedTypes: {
