@@ -1106,10 +1106,10 @@
   resolved "https://registry.yarnpkg.com/@budarin/ulid/-/ulid-1.0.0.tgz#92a85e6c632edf3c8cb6c05b4785242db1f19d87"
   integrity sha512-DzIrH3ZaLzMZJFodaw4dXBSUH18OeDF8AR1X8uHQzZJGwVKOEckG9gHnOa6fPC0V0DgDTCVsyyUmqr6pG8Aj4A==
 
-"@budarin/validate.ts@^1.0.16":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.16.tgz#473016721bad8014108e771803f8f7e7279651a7"
-  integrity sha512-OWAKTBuf8zpRNudNxqsK8krYShdRAmIChg5TE5SpLCFIzJQmwiylV627FaJhqS7/g1KvdON2ms/DOTZPmW1yWg==
+"@budarin/validate.ts@^1.0.17":
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.17.tgz#7f33bd9f89a7f68a8bc29b514fe442bd88ca17af"
+  integrity sha512-Wge1VJmrZeBHCBsC+0volTA6uce2xlE7DbcF24NZkMsPl/OS6ri7JVG2u0hk4Dq1VRt7MHJO2bZB/rMegU4tyQ==
   dependencies:
     "@budarin/json-rpc-interface" "^1.0.2"
 

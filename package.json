@@ -30,7 +30,7 @@
         "@budarin/no-ops-service": "^1.0.4",
         "@budarin/service-stub": "^1.0.2",
         "@budarin/ulid": "^1.0.0",
-        "@budarin/validate.ts": "^1.0.16",
+        "@budarin/validate.ts": "^1.0.17",
         "@statoscope/webpack-plugin": "^5.28.2",
         "@testing-library/jest-dom": "^6.2.0",
         "@testing-library/react": "^14.1.2",
