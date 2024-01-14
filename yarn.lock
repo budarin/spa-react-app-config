@@ -1106,10 +1106,10 @@
   resolved "https://registry.yarnpkg.com/@budarin/ulid/-/ulid-1.0.0.tgz#92a85e6c632edf3c8cb6c05b4785242db1f19d87"
   integrity sha512-DzIrH3ZaLzMZJFodaw4dXBSUH18OeDF8AR1X8uHQzZJGwVKOEckG9gHnOa6fPC0V0DgDTCVsyyUmqr6pG8Aj4A==
 
-"@budarin/validate.ts@^1.0.15":
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.15.tgz#2049032dd021d58cd48f6ad9ae134f4391aa86b2"
-  integrity sha512-BwlaxMjHlsnyd+KI00D6BgYkfWNuceejiHZK0FjXjtWShT+kJdvYOOBTeWAAQyx8Z6ALmVN7+LkU8dh8Jqb3Zw==
+"@budarin/validate.ts@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.16.tgz#473016721bad8014108e771803f8f7e7279651a7"
+  integrity sha512-OWAKTBuf8zpRNudNxqsK8krYShdRAmIChg5TE5SpLCFIzJQmwiylV627FaJhqS7/g1KvdON2ms/DOTZPmW1yWg==
   dependencies:
     "@budarin/json-rpc-interface" "^1.0.2"
 
@@ -4554,12 +4554,7 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
-clsx@^1.1.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
-  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
-
-clsx@^2.0.0:
+clsx@^2.0.0, clsx@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.0.tgz#e851283bcb5c80ee7608db18487433f7b23f77cb"
   integrity sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==
@@ -5555,10 +5550,10 @@ eslint-module-utils@2.8.0, eslint-module-utils@^2.7.4, eslint-module-utils@^2.8.
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-boundaries@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-boundaries/-/eslint-plugin-boundaries-4.0.1.tgz#3a32e1be87279fb8c061072dc4c2cb242b36bb25"
-  integrity sha512-rOomnNDtWyfISgwZMRGn0Vfn34nXHtVgNeonrVnp/XrbrFNLEhlNI1FDsgwD3Pf2o124mnDvu6gRLwResYek3Q==
+eslint-plugin-boundaries@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-boundaries/-/eslint-plugin-boundaries-4.1.0.tgz#836c84535c619b894c60745750432740b4f204b4"
+  integrity sha512-eKDBBxrHLi0/UQpbkiKwoJhzFnYL7wqXsjFujqN1FaxQGS3WXOnQCpkhmzR4xgYNFveeNlBvwUG7Wpe7WwJqvg==
   dependencies:
     chalk "4.1.2"
     eslint-import-resolver-node "0.3.9"
@@ -5597,10 +5592,10 @@ eslint-plugin-jest-dom@^5.1.0:
     "@babel/runtime" "^7.16.3"
     requireindex "^1.2.0"
 
-eslint-plugin-jest@^27.6.2:
-  version "27.6.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.6.2.tgz#8e69404fcd5dfeac03cac478f0ebb9bf2d8db56b"
-  integrity sha512-CI1AlKrsNhYFoP48VU8BVWOi7+qHTq4bRxyUlGjeU8SfFt8abjXhjOuDzUoMp68DoXIx17KpNpIkMrl4s4ZW0g==
+eslint-plugin-jest@^27.6.3:
+  version "27.6.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-27.6.3.tgz#8acb8b1e45597fe1f4d4cf25163d90119efc12be"
+  integrity sha512-+YsJFVH6R+tOiO3gCJon5oqn4KWc+mDq2leudk8mrp8RFubLOo9CVyi3cib4L7XMpxExmkmBZQTPDYVBzgpgOA==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -8958,10 +8953,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.1.tgz#6ba9f23165d690b6cbdaa88cb0807278f7019848"
-  integrity sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==
+prettier@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.2.2.tgz#96e580f7ca9c96090ad054616c0c4597e2844b65"
+  integrity sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==
 
 pretty-error@^4.0.0:
   version "4.0.0"
@@ -9161,12 +9156,12 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-toastify@^9.1.3:
-  version "9.1.3"
-  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-9.1.3.tgz#1e798d260d606f50e0fab5ee31daaae1d628c5ff"
-  integrity sha512-fPfb8ghtn/XMxw3LkxQBk3IyagNpF/LIKjOBflbexr2AWxAH1MJgvnESwEwBn9liLFXgTKWgBSdZpw9m4OTHTg==
+react-toastify@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-10.0.0.tgz#6aa21af816256f31aa5282441cfb62d12eb1d3c2"
+  integrity sha512-nTKun8snjXcdmaYJIwgeXQ1IKkUBDkCt7O3K1y/XdrFh8o+MZwO1mY79cZ+qsXX92KFz6psUxHUZcLHCVkA/Sw==
   dependencies:
-    clsx "^1.1.1"
+    clsx "^2.1.0"
 
 react@^18.2.0:
   version "18.2.0"
