@@ -37,6 +37,10 @@ const optimizationConfig = {
                         return 'react';
                     }
 
+                    if (packageName === '@khmyznikov') {
+                        return 'pwa-install';
+                    }
+
                     if (packageName === '@budarin') {
                         return 'budarin';
                     }
