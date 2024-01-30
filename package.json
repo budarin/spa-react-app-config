@@ -25,7 +25,7 @@
         "@budarin/browser-pino-logger": "^1.0.5",
         "@budarin/cache-store": "^1.0.14",
         "@budarin/deep-equal": "^1.0.0",
-        "@budarin/json-rpc-request": "^1.0.9",
+        "@budarin/json-rpc-request": "^1.0.10",
         "@budarin/local-store": "^1.0.9",
         "@budarin/no-ops-service": "^1.0.4",
         "@budarin/service-stub": "^1.0.2",

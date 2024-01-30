@@ -1155,10 +1155,10 @@
   resolved "https://registry.yarnpkg.com/@budarin/json-rpc-interface/-/json-rpc-interface-1.0.4.tgz#0c90a47458c43e6c8b32a4702bf0b405562a19b1"
   integrity sha512-WJFCdG0ATr3rfsMDay8P9CBBtVyZSm1dXOMlrbQdKdVY/T/DMqsjR+13BBi52VxSExuS0CsjXdkQIZsxC+hbWw==
 
-"@budarin/json-rpc-request@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@budarin/json-rpc-request/-/json-rpc-request-1.0.9.tgz#9e3dd41f35d7be8cf25243f00be6b44bdceaec4a"
-  integrity sha512-oU75+0twyVNlFL+dPNw8SuMYTMDlK3442eIr2aLF/KLZBalsuMbEHyp9GKTdkh1WWaYLMw6dT4Plzy4eBOl8JQ==
+"@budarin/json-rpc-request@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@budarin/json-rpc-request/-/json-rpc-request-1.0.10.tgz#f0668e86c466ba04f3efeaff7cfd299cae49a793"
+  integrity sha512-saYZXm7MB7KW4UJpsvYI4smCUE6Ze6GRlUcRu++A+byOPL87K0WU7xXgsgIrtjIQY/3Arn5udkLt/jP/6WfFWw==
 
 "@budarin/local-store@^1.0.9":
   version "1.0.9"
