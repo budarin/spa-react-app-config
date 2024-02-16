@@ -90,6 +90,7 @@ module.exports = {
         'react/jsx-filename-extension': 'off',
         'react/require-default-props': 'off',
         'react/prop-types': 'off',
+        'react/jsx-one-expression-per-line': 'off',
 
         'no-plusplus': [
             'error',
