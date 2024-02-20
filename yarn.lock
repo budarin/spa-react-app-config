@@ -10140,6 +10140,11 @@ stylelint-order@^6.0.4:
     postcss "^8.4.32"
     postcss-sorting "^8.0.2"
 
+stylelint-plugin-defensive-css@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/stylelint-plugin-defensive-css/-/stylelint-plugin-defensive-css-1.0.2.tgz#28ed5cfad005c3caa284cf93f537380ccb9a0110"
+  integrity sha512-VI91Tjm3e07OfR3u24GgMqdO0/lgv93nIGic9e5gmvlMUwtdloGJtJenlcYWNChmdBXmuikf2wtAYqPQfBoOBA==
+
 stylelint-use-logical-spec@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/stylelint-use-logical-spec/-/stylelint-use-logical-spec-5.0.1.tgz#d5aa254d615d373f18214297c0b49a03a6ca5980"
