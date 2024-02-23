@@ -1,6 +1,6 @@
 module.exports = {
     extends: ['stylelint-config-standard', 'stylelint-config-clean-order'],
-    plugins: ['stylelint-use-logical-spec'],
+    plugins: ['stylelint-use-logical-spec', 'plugin/use-defensive-cs'],
     rules: {
         'selector-class-pattern': null,
         'custom-property-pattern': null,
@@ -8,16 +8,17 @@ module.exports = {
 
         // https://defensivecss.dev/
         // https://github.com/yuschick/stylelint-plugin-defensive-css
-        'plugin/use-defensive-css': [true, { 'accidental-hover': true }],
-        'plugin/use-defensive-css': [true, { 'background-repeat': true }],
-        'plugin/use-defensive-css': [true, { 'custom-property-fallbacks': true }],
-        'plugin/use-defensive-css': [
-            true,
-            { 'custom-property-fallbacks': [true, { ignore: [/hel-/, 'theme-'] }] },
-        ],
-        'plugin/use-defensive-css': [true, { 'flex-wrapping': true }],
-        'plugin/use-defensive-css': [true, { 'scroll-chaining': true }],
-        'plugin/use-defensive-css': [true, { 'scrollbar-gutter': true }],
-        'plugin/use-defensive-css': [true, { 'vendor-prefix-grouping': true }],
+
+        // 'plugin/use-defensive-css': [true, { 'accidental-hover': true }],
+        // 'plugin/use-defensive-css': [true, { 'background-repeat': true }],
+        // 'plugin/use-defensive-css': [true, { 'custom-property-fallbacks': true }],
+        // 'plugin/use-defensive-css': [
+        //     true,
+        //     { 'custom-property-fallbacks': [true, { ignore: [/hel-/, 'theme-'] }] },
+        // ],
+        // 'plugin/use-defensive-css': [true, { 'flex-wrapping': true }],
+        // 'plugin/use-defensive-css': [true, { 'scroll-chaining': true }],
+        // 'plugin/use-defensive-css': [true, { 'scrollbar-gutter': true }],
+        // 'plugin/use-defensive-css': [true, { 'vendor-prefix-grouping': true }],
     },
 };
