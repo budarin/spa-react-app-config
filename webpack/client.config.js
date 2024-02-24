@@ -82,15 +82,15 @@ module.exports = {
                                             // browsers: 'last 2 versions',
                                         },
                                     ],
-                                    [
-                                        'postcss-pixels-to-rem',
-                                        {
-                                            base: 16,
-                                            unit: 'rem',
-                                            exclude: [],
-                                            mediaQueries: true,
-                                        },
-                                    ],
+                                    // [
+                                    //     'postcss-pixels-to-rem',
+                                    //     {
+                                    //         base: 16,
+                                    //         unit: 'rem',
+                                    //         exclude: [],
+                                    //         mediaQueries: true,
+                                    //     },
+                                    // ],
                                 ],
                             },
                         },
