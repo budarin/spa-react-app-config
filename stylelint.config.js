@@ -1,6 +1,8 @@
+const plugins = process.env.NODE_ENV === 'production' ? ['stylelint-use-logical-spec'] : [];
+
 module.exports = {
     extends: ['stylelint-config-standard', 'stylelint-config-clean-order'],
-    plugins: ['stylelint-use-logical-spec'],
+    plugins,
     rules: {
         'selector-class-pattern': null,
         'custom-property-pattern': null,
