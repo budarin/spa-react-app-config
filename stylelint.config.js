@@ -8,6 +8,7 @@ module.exports = {
 
         // https://defensivecss.dev/
         // https://github.com/yuschick/stylelint-plugin-defensive-css
+        // https://github.com/yuschick/stylelint-plugin-defensive-css/issues/34
 
         // 'plugin/use-defensive-css': [true, { 'accidental-hover': true }],
         // 'plugin/use-defensive-css': [true, { 'background-repeat': true }],
