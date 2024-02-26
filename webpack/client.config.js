@@ -18,7 +18,7 @@ module.exports = {
             __DEV__: process.env['NODE_ENV'] !== 'production',
             __PROD__: process.env['NODE_ENV'] === 'production',
             __TEST__: process.env['NODE_ENV'] === 'test',
-            __VERSION__: process.env.npm_package_version,
+            __VERSION__: JSON.stringify(process.env.npm_package_version),
         }),
     ],
     resolve: {
