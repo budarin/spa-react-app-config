@@ -10,16 +10,18 @@ module.exports = {
         // https://github.com/yuschick/stylelint-plugin-defensive-css
         // https://github.com/yuschick/stylelint-plugin-defensive-css/issues/34
 
-        'plugin/use-defensive-css': [true, { 'accidental-hover': true }],
-        'plugin/use-defensive-css': [true, { 'background-repeat': true }],
-        'plugin/use-defensive-css': [true, { 'custom-property-fallbacks': true }],
         'plugin/use-defensive-css': [
             true,
-            { 'custom-property-fallbacks': [true, { ignore: [/hel-/, 'theme-'] }] },
+            {
+                severity: 'warning',
+                'accidental-hover': true,
+                'background-repeat': true,
+                'custom-property-fallbacks': true,
+                'flex-wrapping': true,
+                'scroll-chaining': true,
+                'scrollbar-gutter': true,
+                'vendor-prefix-grouping': true,
+            },
         ],
-        'plugin/use-defensive-css': [true, { 'flex-wrapping': true }],
-        'plugin/use-defensive-css': [true, { 'scroll-chaining': true }],
-        'plugin/use-defensive-css': [true, { 'scrollbar-gutter': true }],
-        'plugin/use-defensive-css': [true, { 'vendor-prefix-grouping': true }],
     },
 };
