@@ -16,7 +16,7 @@ module.exports = {
                 severity: 'warning',
                 'accidental-hover': true,
                 'background-repeat': true,
-                'custom-property-fallbacks': true,
+                'custom-property-fallbacks': false,
                 'flex-wrapping': true,
                 'scroll-chaining': true,
                 'scrollbar-gutter': true,
