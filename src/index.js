@@ -11,7 +11,7 @@ module.exports = {
         getProdConfig: () => require('../webpack/prod.config.js'),
         getClientConfig: () => require('../webpack/client.config.js'),
         getClientProdConfig: () => require('../webpack/client.prod.config.js'),
-        getSwConfig: () => require('../webpack/sw.config.js'),
-        getSwProdConfig: () => require('../webpack/sw.prod.config.js'),
+        getServerConfig: () => require('../webpack/server.config.js'),
+        getServerProdConfig: () => require('../webpack/server.prod.config.js'),
     },
 };
