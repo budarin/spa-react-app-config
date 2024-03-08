@@ -2,10 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-module.exports = {
+const config = {
     mode: 'development',
     devtool: false,
-    entry: './src/providers/sw/index.ts',
+    entry: './src/server/index.ts',
     output: {
         path: path.resolve('./dist'),
         filename: 'sw.js',
@@ -67,3 +67,5 @@ module.exports = {
         ],
     },
 };
+
+module.exports = config;

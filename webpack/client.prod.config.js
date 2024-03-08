@@ -7,10 +7,10 @@ const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 
 const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
 
-module.exports = {
+const config = {
     mode: 'production',
     devtool: false,
-    entry: './src/index.ts',
+    entry: './src/client/index.ts',
     cache: {
         type: 'filesystem',
     },
@@ -137,3 +137,5 @@ module.exports = {
         ],
     },
 };
+
+module.exports = config;

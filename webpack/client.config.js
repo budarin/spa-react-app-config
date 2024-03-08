@@ -2,10 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-module.exports = {
+const config = {
     mode: 'development',
     devtool: 'inline-source-map',
-    entry: './src/index.ts',
+    entry: './src/client/index.ts',
     output: {
         path: path.resolve('./dist'),
         trustedTypes: {
@@ -116,3 +116,5 @@ module.exports = {
         historyApiFallback: true,
     },
 };
+
+module.exports = config;
