@@ -1111,10 +1111,10 @@
   resolved "https://registry.yarnpkg.com/@budarin/ulid/-/ulid-1.0.2.tgz#2ccdc7c957a4be68521cb1c62fe347c2994f2527"
   integrity sha512-S3UqGKubxicmofyyafY2KWuVA+v1z1+yMmzPje03WaA4mMMkE2Pi88wWggjinZqlUagUWk4ookbpa9Pl7llJOQ==
 
-"@budarin/validate.ts@^1.0.23":
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.23.tgz#79f9f33654f12971fa5b61b314efbb42b2756112"
-  integrity sha512-zxMBhm/9o+cSFldJmOwR1tqdYU+Cdh1dAsTaksV0PzgWXO4vUaq/gzwMDGG+t8l6e0pFCsZ4Ww3j7AFj6JcSLQ==
+"@budarin/validate.ts@^1.0.25":
+  version "1.0.25"
+  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.25.tgz#c6bc7571b90dc24d83dcf1a1f7aa23586eeebc95"
+  integrity sha512-lSNpRI3yckVc/LnbduCpIyf9oE9FHvf/NcTHvaUsFUuWsWkfAW4HgV4hg4ueCYxAuHsh7C0zLd6lBsS94g2ucg==
   dependencies:
     "@budarin/json-rpc-interface" "^1.0.4"
 
@@ -3438,10 +3438,10 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@^20.11.27":
-  version "20.11.27"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.27.tgz#debe5cfc8a507dd60fe2a3b4875b1604f215c2ac"
-  integrity sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==
+"@types/node@^20.11.28":
+  version "20.11.28"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.28.tgz#4fd5b2daff2e580c12316e457473d68f15ee6f66"
+  integrity sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==
   dependencies:
     undici-types "~5.26.4"
 
@@ -3493,10 +3493,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.2.65":
-  version "18.2.65"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.65.tgz#54eb311fa9aba173c9e163d42ec188d5a42878b8"
-  integrity sha512-98TsY0aW4jqx/3RqsUXwMDZSWR1Z4CUlJNue8ueS2/wcxZOsz4xmW1X8ieaWVRHcmmQM3R8xVA4XWB3dJnWwDQ==
+"@types/react@^18.2.66":
+  version "18.2.66"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.66.tgz#d2eafc8c4e70939c5432221adb23d32d76bfe451"
+  integrity sha512-OYTmMI4UigXeFMF/j4uv0lBBEbongSgptPrHBxqME44h9+yNov+oL6Z3ocJKo0WyXR84sQUNeyIp9MRfckvZpg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -5760,10 +5760,10 @@ eslint-plugin-react-hooks@^4.6.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
   integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
 
-eslint-plugin-react@^7.34.0:
-  version "7.34.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.34.0.tgz#ab71484d54fc409c37025c5eca00eb4177a5e88c"
-  integrity sha512-MeVXdReleBTdkz/bvcQMSnCXGi+c9kvy51IpinjnJgutl3YTHWsDdke7Z1ufZpGfDG8xduBDKyjtB9JH1eBKIQ==
+eslint-plugin-react@^7.34.1:
+  version "7.34.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.34.1.tgz#6806b70c97796f5bbfb235a5d3379ece5f4da997"
+  integrity sha512-N97CxlouPT1AHt8Jn0mhhN2RrADlUAsk1/atcT2KyA/l9Q/E6ll7OIGwNumFmWfZ9skV3XXccYS19h80rHtgkw==
   dependencies:
     array-includes "^3.1.7"
     array.prototype.findlast "^1.2.4"
@@ -9338,10 +9338,10 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-toastify@^10.0.4:
-  version "10.0.4"
-  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-10.0.4.tgz#6ecdbbf923a07fc45850e69b0566efc7bf733283"
-  integrity sha512-etR3RgueY8pe88SA67wLm8rJmL1h+CLqUGHuAoNsseW35oTGJEri6eBTyaXnFKNQ80v/eO10hBYLgz036XRGgA==
+react-toastify@^10.0.5:
+  version "10.0.5"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-10.0.5.tgz#6b8f8386060c5c856239f3036d1e76874ce3bd1e"
+  integrity sha512-mNKt2jBXJg4O7pSdbNUfDdTsK9FIdikfsIE/yUCxbAEXl4HMyJaivrVFcn3Elvt5xvCQYhUZm+hqTIu1UXM3Pw==
   dependencies:
     clsx "^2.1.0"
 
