@@ -142,6 +142,11 @@ module.exports = {
                 packageDir: ['./', './node_modules/@budarin/spa-react-app-config'],
             },
         ],
+
+        'react/jsx-curly-newline': 'off',
+        'react/jsx-curly-spacing': 'off',
+        'react/jsx-indent': 'off',
+        'react/jsx-indent-props': 'off',
     },
 
     ignorePatterns: ['*.js', '!./src'],
