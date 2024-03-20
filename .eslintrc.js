@@ -147,6 +147,8 @@ module.exports = {
         'react/jsx-curly-spacing': 'off',
         'react/jsx-indent': 'off',
         'react/jsx-indent-props': 'off',
+        'no-spaced-func': 'off',
+        'func-call-spacing': 'off',
     },
 
     ignorePatterns: ['*.js', '!./src'],
