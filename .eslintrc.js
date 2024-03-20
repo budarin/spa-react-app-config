@@ -157,6 +157,8 @@ module.exports = {
         'react/jsx-equals-spacing': 'off',
         'react/jsx-space-before-closing': 'off',
         'react/jsx-child-element-spacing': 'off',
+        'no-spaced-func': 'off',
+        'func-call-spacing': 'off',
     },
 
     ignorePatterns: ['*.js', '!./src'],
