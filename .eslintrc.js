@@ -21,6 +21,7 @@ module.exports = {
         'plugin:jsx-a11y/recommended',
         'plugin:sonarjs/recommended',
         'plugin:boundaries/strict',
+        'prettier',
     ],
 
     parser: '@typescript-eslint/parser',
