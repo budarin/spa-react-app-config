@@ -1160,25 +1160,25 @@
   resolved "https://registry.yarnpkg.com/@bem-react/classname/-/classname-1.6.0.tgz#dbd1fc337b50fe726dae79c1c8184d7016aa6ccf"
   integrity sha512-SFBwUHMcb7TFFK5ld88+JhecoEun3/kHZ6KvLDjj3w5hv/tfRV8mtGHA8N42uMctXLF4bPEcr96xwXXcRFuweg==
 
-"@budarin/browser-pino-dev-logger@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-dev-logger/-/browser-pino-dev-logger-1.0.9.tgz#24d497e4d479106ab8afd71ea975a1fb3b686f0a"
-  integrity sha512-l0XhYMopuzJWD4/7Et7afGgt9avLxbQ9xsgr7WLgngOWZ8AKTPAUt6aPZ+OCLekE4LqJnogWOHLPJkHsppiS0A==
+"@budarin/browser-pino-dev-logger@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-dev-logger/-/browser-pino-dev-logger-1.0.10.tgz#8394847465cd547429ae5dad2ea9a19d573516a1"
+  integrity sha512-G1BhKzNkD8rRQRV7VBJ42S/IZP/GrVsGnJRGtGjLKeg7WlsIYovVauAo6txcBnj4JPO9cXKIkAXgsbKEbtDkxw==
   dependencies:
     pino "^8.19.0"
 
-"@budarin/browser-pino-logger@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-logger/-/browser-pino-logger-1.0.7.tgz#74960faaee8a4023006f6f8ca4032a772ea22259"
-  integrity sha512-hoaihRlw3hgvcJ8we++ogh2O+3n3EVj+gdB9+aitK7ipyx/29Rh2v6rmrnsV1ICG7OiYCfYMdFWA2Z9VEic0vg==
+"@budarin/browser-pino-logger@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-logger/-/browser-pino-logger-1.0.8.tgz#862f2dc70931e6abd978a9b813b1124b4d716f87"
+  integrity sha512-jaJRisQslPDiJaDQY3VRH+9tx5Vlozg54HnoQEVMHLNJRAIzJVKqWOi0l8KAHNlXPCceoaIoqA1EYKAgoy9jkQ==
   dependencies:
-    "@budarin/ulid" "^1.0.1"
+    "@budarin/ulid" "^1.0.2"
     pino "^8.19.0"
 
-"@budarin/cache-store@^1.0.17":
-  version "1.0.17"
-  resolved "https://registry.yarnpkg.com/@budarin/cache-store/-/cache-store-1.0.17.tgz#0c5a701a6c88584e9a3700e1841bacff0d103305"
-  integrity sha512-po9TCL5eVa66OEFhAyz1GkLwN7h3+ZUVzrvHMDidxevg1tkKwu2QyGqW3t1ZGdD9CV5A3+XvjG/CFHsLgffc7A==
+"@budarin/cache-store@^1.0.18":
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/@budarin/cache-store/-/cache-store-1.0.18.tgz#02576fd56165ceafd5421dc9b1f8d1ba059c0892"
+  integrity sha512-NbHFke5GEqNwA+Iv/F+jFIjPKJ127JRgnCVCIxvsVpJGbza7mBTRgQW2Yyv9bEZ5DHtywHHWSUtDqh8FrvP5ig==
 
 "@budarin/deep-equal@^1.0.0":
   version "1.0.0"
@@ -1190,35 +1190,40 @@
   resolved "https://registry.yarnpkg.com/@budarin/json-rpc-interface/-/json-rpc-interface-1.0.4.tgz#0c90a47458c43e6c8b32a4702bf0b405562a19b1"
   integrity sha512-WJFCdG0ATr3rfsMDay8P9CBBtVyZSm1dXOMlrbQdKdVY/T/DMqsjR+13BBi52VxSExuS0CsjXdkQIZsxC+hbWw==
 
-"@budarin/json-rpc-request@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@budarin/json-rpc-request/-/json-rpc-request-1.0.11.tgz#6eed027e1693e919231f3d3f92c054091b254c38"
-  integrity sha512-VYyp7jg7EScFSzYscu3812+F7U8wfKQUvRIJJf+pfcA+fKa+8hW1G37wiexdswKX2zguyETgk57BT4ShY9OeCA==
+"@budarin/json-rpc-request@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@budarin/json-rpc-request/-/json-rpc-request-1.0.12.tgz#9ca1774ae90c698f37abdae076e7d21db4f2947a"
+  integrity sha512-lDFIN+msPnQi8u9napx70TE9zhbhMOvo3XUQempJ4bo0lxBGPDfPLxIZe/+toodNQf74Pe5VleBK2wipjUoc/w==
 
-"@budarin/local-store@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@budarin/local-store/-/local-store-1.0.11.tgz#63ea37355ab1cde83c6b88237f8d333af9758dec"
-  integrity sha512-8fVdRcdWTWkqCVrEJ4mlcpJLc2Ib5N/oi4wmcR2M4OqDmnk+5i3Uq/8K29EWSc4y0BuRDAn6qdcv9xqa0xiXGw==
+"@budarin/local-store@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@budarin/local-store/-/local-store-1.0.12.tgz#9aaeadebe9203f7abf6286f941c785df512a1068"
+  integrity sha512-buW/3+t5ekBVjC7zpSvaY+3JaurelboslDiLTSLDY5EOPbFSyvJCmtaynqA+u6t0YFWuR73/Du08vN/7ukX05g==
 
-"@budarin/no-ops-service@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@budarin/no-ops-service/-/no-ops-service-1.0.6.tgz#f18c2d01efca8d9d70ccdb2515602d6be07b8928"
-  integrity sha512-ZCVc2+UaPdPBNLpRjER/7ia2Plk87uya8AEU7gjVREtJMuC5QUXnayNm3Lo5HPSNFhm5xu/L/UlxSpepwM1xPg==
+"@budarin/no-ops-service@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@budarin/no-ops-service/-/no-ops-service-1.0.7.tgz#a6524ea027d9c7b367fe301bd2cb6098c4b7f937"
+  integrity sha512-wwdAT80we2ZUgVd9zm+fCDptSsU9gjpmkB6/4uUFP6xcyvOJDa83NV7WdmabhujgWMa3qWVii9EcpsAKiqdMRQ==
 
-"@budarin/service-stub@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@budarin/service-stub/-/service-stub-1.0.4.tgz#6cc930bcdad4b17da884e14a9a762060078b9b3a"
-  integrity sha512-fR/Ic3x4FYNMfm+Fk0lwdEa0sasT099BQrQsM4J0IxtAr5y8kxm7nbmR85vDc8W75SkProvQBUPezIJ11BrWXw==
+"@budarin/service-stub@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@budarin/service-stub/-/service-stub-1.0.5.tgz#9a27b7f321b8282e422609bd2ffae3b544dca1d1"
+  integrity sha512-wnp2BY12IfvzBfmUrthK9+MPag7TzGq5cBWD9IZME2tEo47U808N2F9blh72RlN70iZbpabUlpi7TfQbyGrHNg==
 
-"@budarin/ulid@^1.0.1", "@budarin/ulid@^1.0.2":
+"@budarin/ulid@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@budarin/ulid/-/ulid-1.0.2.tgz#2ccdc7c957a4be68521cb1c62fe347c2994f2527"
   integrity sha512-S3UqGKubxicmofyyafY2KWuVA+v1z1+yMmzPje03WaA4mMMkE2Pi88wWggjinZqlUagUWk4ookbpa9Pl7llJOQ==
 
-"@budarin/validate.ts@^1.0.25":
-  version "1.0.25"
-  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.25.tgz#c6bc7571b90dc24d83dcf1a1f7aa23586eeebc95"
-  integrity sha512-lSNpRI3yckVc/LnbduCpIyf9oE9FHvf/NcTHvaUsFUuWsWkfAW4HgV4hg4ueCYxAuHsh7C0zLd6lBsS94g2ucg==
+"@budarin/ulid@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@budarin/ulid/-/ulid-1.0.3.tgz#0afce7553e576fd1e6eb3bb92e3f58e950a06b15"
+  integrity sha512-qspU+rIrksztT+D61A0kG2b2MuHFOWl9EyP0FQrDJQw/rk3WphTWNINmY0SAkhcow5x2CM4yytPnQIzHkinnUA==
+
+"@budarin/validate.ts@^1.0.26":
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/@budarin/validate.ts/-/validate.ts-1.0.26.tgz#4764f904879e52be1cca94afce7c431c9bb50a52"
+  integrity sha512-PtEUqfZSKWqQhzIpinN5hR6gvxVuohlKndIQgYZHuTrFelx49uwOVsmN1lqBnMJ3qhhJdjpFyckyz66wX8SiuA==
   dependencies:
     "@budarin/json-rpc-interface" "^1.0.4"
 
@@ -3857,6 +3862,14 @@
     "@webassemblyjs/helper-numbers" "1.11.6"
     "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
 
+"@webassemblyjs/ast@1.12.1", "@webassemblyjs/ast@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.12.1.tgz#bb16a0e8b1914f979f45864c23819cc3e3f0d4bb"
+  integrity sha512-EKfMUOPRRUTy5UII4qJDGPpqfwjOmZ5jeGFwid9mnoqIFK+e0vqoi1qH56JpmZSzEL53jKnNzScdmftJyG5xWg==
+  dependencies:
+    "@webassemblyjs/helper-numbers" "1.11.6"
+    "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
+
 "@webassemblyjs/floating-point-hex-parser@1.11.6":
   version "1.11.6"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/floating-point-hex-parser/-/floating-point-hex-parser-1.11.6.tgz#dacbcb95aff135c8260f77fa3b4c5fea600a6431"
@@ -3871,6 +3884,11 @@
   version "1.11.6"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/helper-buffer/-/helper-buffer-1.11.6.tgz#b66d73c43e296fd5e88006f18524feb0f2c7c093"
   integrity sha512-z3nFzdcp1mb8nEOFFk8DrYLpHvhKC3grJD2ardfKOzmbmJvEf/tPIqCY+sNcwZIY8ZD7IkB2l7/pqhUhqm7hLA==
+
+"@webassemblyjs/helper-buffer@1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/helper-buffer/-/helper-buffer-1.12.1.tgz#6df20d272ea5439bf20ab3492b7fb70e9bfcb3f6"
+  integrity sha512-nzJwQw99DNDKr9BVCOZcLuJJUlqkJh+kVzVl6Fmq/tI5ZtEyWT1KZMyOXltXLZJmDtvLCDgwsyrkohEtopTXCw==
 
 "@webassemblyjs/helper-numbers@1.11.6":
   version "1.11.6"
@@ -3895,6 +3913,16 @@
     "@webassemblyjs/helper-buffer" "1.11.6"
     "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
     "@webassemblyjs/wasm-gen" "1.11.6"
+
+"@webassemblyjs/helper-wasm-section@1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/helper-wasm-section/-/helper-wasm-section-1.12.1.tgz#3da623233ae1a60409b509a52ade9bc22a37f7bf"
+  integrity sha512-Jif4vfB6FJlUlSbgEMHUyk1j234GTNG9dBJ4XJdOySoj518Xj0oGsNi59cUQF4RRMS9ouBUxDDdyBVfPTypa5g==
+  dependencies:
+    "@webassemblyjs/ast" "1.12.1"
+    "@webassemblyjs/helper-buffer" "1.12.1"
+    "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
+    "@webassemblyjs/wasm-gen" "1.12.1"
 
 "@webassemblyjs/ieee754@1.11.6":
   version "1.11.6"
@@ -3929,12 +3957,37 @@
     "@webassemblyjs/wasm-parser" "1.11.6"
     "@webassemblyjs/wast-printer" "1.11.6"
 
+"@webassemblyjs/wasm-edit@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-edit/-/wasm-edit-1.12.1.tgz#9f9f3ff52a14c980939be0ef9d5df9ebc678ae3b"
+  integrity sha512-1DuwbVvADvS5mGnXbE+c9NfA8QRcZ6iKquqjjmR10k6o+zzsRVesil54DKexiowcFCPdr/Q0qaMgB01+SQ1u6g==
+  dependencies:
+    "@webassemblyjs/ast" "1.12.1"
+    "@webassemblyjs/helper-buffer" "1.12.1"
+    "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
+    "@webassemblyjs/helper-wasm-section" "1.12.1"
+    "@webassemblyjs/wasm-gen" "1.12.1"
+    "@webassemblyjs/wasm-opt" "1.12.1"
+    "@webassemblyjs/wasm-parser" "1.12.1"
+    "@webassemblyjs/wast-printer" "1.12.1"
+
 "@webassemblyjs/wasm-gen@1.11.6":
   version "1.11.6"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-gen/-/wasm-gen-1.11.6.tgz#fb5283e0e8b4551cc4e9c3c0d7184a65faf7c268"
   integrity sha512-3XOqkZP/y6B4F0PBAXvI1/bky7GryoogUtfwExeP/v7Nzwo1QLcq5oQmpKlftZLbT+ERUOAZVQjuNVak6UXjPA==
   dependencies:
     "@webassemblyjs/ast" "1.11.6"
+    "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
+    "@webassemblyjs/ieee754" "1.11.6"
+    "@webassemblyjs/leb128" "1.11.6"
+    "@webassemblyjs/utf8" "1.11.6"
+
+"@webassemblyjs/wasm-gen@1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-gen/-/wasm-gen-1.12.1.tgz#a6520601da1b5700448273666a71ad0a45d78547"
+  integrity sha512-TDq4Ojh9fcohAw6OIMXqiIcTq5KUXTGRkVxbSo1hQnSy6lAM5GSdfwWeSxpAo0YzgsgF182E/U0mDNhuA0tW7w==
+  dependencies:
+    "@webassemblyjs/ast" "1.12.1"
     "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
     "@webassemblyjs/ieee754" "1.11.6"
     "@webassemblyjs/leb128" "1.11.6"
@@ -3950,6 +4003,16 @@
     "@webassemblyjs/wasm-gen" "1.11.6"
     "@webassemblyjs/wasm-parser" "1.11.6"
 
+"@webassemblyjs/wasm-opt@1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-opt/-/wasm-opt-1.12.1.tgz#9e6e81475dfcfb62dab574ac2dda38226c232bc5"
+  integrity sha512-Jg99j/2gG2iaz3hijw857AVYekZe2SAskcqlWIZXjji5WStnOpVoat3gQfT/Q5tb2djnCjBtMocY/Su1GfxPBg==
+  dependencies:
+    "@webassemblyjs/ast" "1.12.1"
+    "@webassemblyjs/helper-buffer" "1.12.1"
+    "@webassemblyjs/wasm-gen" "1.12.1"
+    "@webassemblyjs/wasm-parser" "1.12.1"
+
 "@webassemblyjs/wasm-parser@1.11.6", "@webassemblyjs/wasm-parser@^1.11.5":
   version "1.11.6"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-parser/-/wasm-parser-1.11.6.tgz#bb85378c527df824004812bbdb784eea539174a1"
@@ -3962,12 +4025,32 @@
     "@webassemblyjs/leb128" "1.11.6"
     "@webassemblyjs/utf8" "1.11.6"
 
+"@webassemblyjs/wasm-parser@1.12.1", "@webassemblyjs/wasm-parser@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-parser/-/wasm-parser-1.12.1.tgz#c47acb90e6f083391e3fa61d113650eea1e95937"
+  integrity sha512-xikIi7c2FHXysxXe3COrVUPSheuBtpcfhbpFj4gmu7KRLYOzANztwUU0IbsqvMqzuNK2+glRGWCEqZo1WCLyAQ==
+  dependencies:
+    "@webassemblyjs/ast" "1.12.1"
+    "@webassemblyjs/helper-api-error" "1.11.6"
+    "@webassemblyjs/helper-wasm-bytecode" "1.11.6"
+    "@webassemblyjs/ieee754" "1.11.6"
+    "@webassemblyjs/leb128" "1.11.6"
+    "@webassemblyjs/utf8" "1.11.6"
+
 "@webassemblyjs/wast-printer@1.11.6":
   version "1.11.6"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/wast-printer/-/wast-printer-1.11.6.tgz#a7bf8dd7e362aeb1668ff43f35cb849f188eff20"
   integrity sha512-JM7AhRcE+yW2GWYaKeHL5vt4xqee5N2WcezptmgyhNS+ScggqcT1OtXykhAb13Sn5Yas0j2uv9tHgrjwvzAP4A==
   dependencies:
     "@webassemblyjs/ast" "1.11.6"
+    "@xtuc/long" "4.2.2"
+
+"@webassemblyjs/wast-printer@1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/wast-printer/-/wast-printer-1.12.1.tgz#bcecf661d7d1abdaf989d8341a4833e33e2b31ac"
+  integrity sha512-+X4WAlOisVWQMikjbcvY2e0rwPsKQ9F688lksZhBcPycBBuii3O7m8FACbDMWDojpAqvjIncrG8J0XHKyQfVeA==
+  dependencies:
+    "@webassemblyjs/ast" "1.12.1"
     "@xtuc/long" "4.2.2"
 
 "@webpack-cli/configtest@^2.1.1":
@@ -4639,10 +4722,10 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001587, caniuse-lite@^1.0.30001591:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001596.tgz#da06b79c3d9c3d9958eb307aa832ac68ead79bee"
   integrity sha512-zpkZ+kEr6We7w63ORkoJ2pOfBwBkY/bJrG/UZ90qNb45Isblu8wzDgevEOrRL1r9dWayHjYiiyCMEXPn4DweGQ==
 
-caniuse-lite@^1.0.30001599:
-  version "1.0.30001599"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001599.tgz#571cf4f3f1506df9bf41fcbb6d10d5d017817bce"
-  integrity sha512-LRAQHZ4yT1+f9LemSMeqdMpMxZcc4RMWdj4tiFe3G8tNkWK+E58g+/tzotb5cU6TbcVJLr4fySiAW7XmxQvZQA==
+caniuse-lite@^1.0.30001600:
+  version "1.0.30001600"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001600.tgz#93a3ee17a35aa6a9f0c6ef1b2ab49507d1ab9079"
+  integrity sha512-+2S9/2JFhYmYaDpZvo0lKkfvuKIglrx68MwOBqMGHhQsNkLjB5xtc/TGoEPs+MxjSyN/72qer2g97nzR641mOQ==
 
 chalk@4.1.2, chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
@@ -5501,6 +5584,14 @@ enhanced-resolve@^5.12.0, enhanced-resolve@^5.15.0, enhanced-resolve@^5.7.0:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
 
+enhanced-resolve@^5.16.0:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.16.0.tgz#65ec88778083056cb32487faa9aef82ed0864787"
+  integrity sha512-O+QWCviPNSSLAD9Ucn8Awv+poAkqn3T1XY5/N7kR7rQO9yfSGWkYZDwpJ+iKF7B8rxaQKWngSqACpgzeapSyoA==
+  dependencies:
+    graceful-fs "^4.2.4"
+    tapable "^2.2.0"
+
 entities@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
@@ -5827,10 +5918,10 @@ eslint-plugin-import@^2.29.1:
     semver "^6.3.1"
     tsconfig-paths "^3.15.0"
 
-eslint-plugin-jest-dom@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.1.0.tgz#b285cd1cc71c084c8ee897f0f85599758d7cb933"
-  integrity sha512-JIXZp+E/h/aGlP/rQc4tuOejiHlZXg65qw8JAJMIJA5VsdjOkss/SYcRSqBrQuEOytEM8JvngUjcz31d1RrCrA==
+eslint-plugin-jest-dom@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.2.0.tgz#81abac31683195251683229b0796311c1529d90e"
+  integrity sha512-ctnCP0MsLmUvbCyhnOQ+/1OmsZj+e7V6kFunazIx5728Yq7TQnuKI8HOsgPTStB+9iYEpiEa+VfKB09Lq7/3fA==
   dependencies:
     "@babel/runtime" "^7.16.3"
     requireindex "^1.2.0"
@@ -6590,7 +6681,7 @@ gopd@^1.0.1:
   dependencies:
     get-intrinsic "^1.1.3"
 
-graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
+graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.11, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
@@ -9246,10 +9337,10 @@ postcss@^8.4.32, postcss@^8.4.33:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@^8.4.37:
-  version "8.4.37"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.37.tgz#4505f992cd0c20e03d25f13b31901640b2db731a"
-  integrity sha512-7iB/v/r7Woof0glKLH8b1SPHrsX7uhdO+Geb41QpF/+mWZHU3uxxSlN+UXGVit1PawOYDToO+AbZzhBzWRDwbQ==
+postcss@^8.4.38:
+  version "8.4.38"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.38.tgz#b387d533baf2054288e337066d81c6bee9db9e0e"
+  integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==
   dependencies:
     nanoid "^3.3.7"
     picocolors "^1.0.0"
@@ -10679,10 +10770,10 @@ typed-array-length@^1.0.5:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-typescript@^5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.2.tgz#0ae9cebcfae970718474fe0da2c090cad6577372"
-  integrity sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==
+typescript@^5.4.3:
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.3.tgz#5c6fedd4c87bee01cd7a528a30145521f8e0feff"
+  integrity sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
@@ -10826,6 +10917,14 @@ watchpack@^2.4.0:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
+watchpack@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.4.1.tgz#29308f2cac150fa8e4c92f90e0ec954a9fed7fff"
+  integrity sha512-8wrBCMtVhqcXP2Sup1ctSkga6uc2Bx0IIvKyT7yTFier5AXHooSI+QyQQAtTb7+E0IUCCKyTFmXqdqgum2XWGg==
+  dependencies:
+    glob-to-regexp "^0.4.1"
+    graceful-fs "^4.1.2"
+
 wbuf@^1.1.0, wbuf@^1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/wbuf/-/wbuf-1.7.3.tgz#c1d8d149316d3ea852848895cb6a0bfe887b87df"
@@ -10945,7 +11044,7 @@ webpack-sources@^3.2.3:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.3.tgz#2d4daab8451fd4b240cc27055ff6a0c2ccea0cde"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
-webpack@^5, webpack@^5.90.3:
+webpack@^5:
   version "5.90.3"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.90.3.tgz#37b8f74d3ded061ba789bb22b31e82eed75bd9ac"
   integrity sha512-h6uDYlWCctQRuXBs1oYpVe6sFcWedl0dpcVaTf/YF67J9bKvwJajFulMVSYKHrksMB3I/pIagRzDxwxkebuzKA==
@@ -10973,6 +11072,36 @@ webpack@^5, webpack@^5.90.3:
     tapable "^2.1.1"
     terser-webpack-plugin "^5.3.10"
     watchpack "^2.4.0"
+    webpack-sources "^3.2.3"
+
+webpack@^5.91.0:
+  version "5.91.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.91.0.tgz#ffa92c1c618d18c878f06892bbdc3373c71a01d9"
+  integrity sha512-rzVwlLeBWHJbmgTC/8TvAcu5vpJNII+MelQpylD4jNERPwpBJOE2lEcko1zJX3QJeLjTTAnQxn/OJ8bjDzVQaw==
+  dependencies:
+    "@types/eslint-scope" "^3.7.3"
+    "@types/estree" "^1.0.5"
+    "@webassemblyjs/ast" "^1.12.1"
+    "@webassemblyjs/wasm-edit" "^1.12.1"
+    "@webassemblyjs/wasm-parser" "^1.12.1"
+    acorn "^8.7.1"
+    acorn-import-assertions "^1.9.0"
+    browserslist "^4.21.10"
+    chrome-trace-event "^1.0.2"
+    enhanced-resolve "^5.16.0"
+    es-module-lexer "^1.2.1"
+    eslint-scope "5.1.1"
+    events "^3.2.0"
+    glob-to-regexp "^0.4.1"
+    graceful-fs "^4.2.11"
+    json-parse-even-better-errors "^2.3.1"
+    loader-runner "^4.2.0"
+    mime-types "^2.1.27"
+    neo-async "^2.6.2"
+    schema-utils "^3.2.0"
+    tapable "^2.1.1"
+    terser-webpack-plugin "^5.3.10"
+    watchpack "^2.4.1"
     webpack-sources "^3.2.3"
 
 webpod@^0:
