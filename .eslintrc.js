@@ -143,6 +143,7 @@ module.exports = {
                 packageDir: ['./', './node_modules/@budarin/spa-react-app-config'],
             },
         ],
+        'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     },
 
     ignorePatterns: ['*.js', '!./src'],
