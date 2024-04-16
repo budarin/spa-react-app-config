@@ -1199,10 +1199,10 @@
   resolved "https://registry.yarnpkg.com/@bem-react/classname/-/classname-1.6.0.tgz#dbd1fc337b50fe726dae79c1c8184d7016aa6ccf"
   integrity sha512-SFBwUHMcb7TFFK5ld88+JhecoEun3/kHZ6KvLDjj3w5hv/tfRV8mtGHA8N42uMctXLF4bPEcr96xwXXcRFuweg==
 
-"@budarin/browser-pino-dev-logger@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-dev-logger/-/browser-pino-dev-logger-1.0.11.tgz#1cfec372a889241b7307a87a2470f242fada45c8"
-  integrity sha512-BOGxscC1tn5D3MXwd1Ucim0xqhC4Gs9+5bbxNWIwssBVjPrcvpZJMzB2yXBl9LLSacQjF4xQ1SPjwv3w93GGmg==
+"@budarin/browser-pino-dev-logger@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-dev-logger/-/browser-pino-dev-logger-1.0.12.tgz#430e1097428bb21816839ea5e225953aa6cf9c92"
+  integrity sha512-wSfhmYMRW2yGUAcBMC+UnZRsnmaHVnkdNhoHudv6liaUT2l1wXFr5hrKuBtsCbs3R7Io+vXKRmh7Sra5LKi3OQ==
   dependencies:
     pino "^8.19.0"
 
@@ -5070,10 +5070,10 @@ core-js-compat@^3.36.1:
   dependencies:
     browserslist "^4.23.0"
 
-core-js@^3.36.1:
-  version "3.36.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.36.1.tgz#c97a7160ebd00b2de19e62f4bbd3406ab720e578"
-  integrity sha512-BTvUrwxVBezj5SZ3f10ImnX2oRByMxql3EimVqMysepbC9EeMUOpLwdy6Eoili2x6E4kf+ZUB5k/+Jv55alPfA==
+core-js@^3.37.0:
+  version "3.37.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.37.0.tgz#d8dde58e91d156b2547c19d8a4efd5c7f6c426bb"
+  integrity sha512-fu5vHevQ8ZG4og+LXug8ulUtVxjOcEYvifJr7L5Bfq9GOztVqsKd9/59hUk2ZSbCrS3BqUr3EpaYGIYzq7g3Ug==
 
 core-util-is@~1.0.0:
   version "1.0.3"
