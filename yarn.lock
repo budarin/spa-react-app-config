@@ -1199,17 +1199,17 @@
   resolved "https://registry.yarnpkg.com/@bem-react/classname/-/classname-1.6.0.tgz#dbd1fc337b50fe726dae79c1c8184d7016aa6ccf"
   integrity sha512-SFBwUHMcb7TFFK5ld88+JhecoEun3/kHZ6KvLDjj3w5hv/tfRV8mtGHA8N42uMctXLF4bPEcr96xwXXcRFuweg==
 
-"@budarin/browser-pino-dev-logger@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-dev-logger/-/browser-pino-dev-logger-1.0.12.tgz#430e1097428bb21816839ea5e225953aa6cf9c92"
-  integrity sha512-wSfhmYMRW2yGUAcBMC+UnZRsnmaHVnkdNhoHudv6liaUT2l1wXFr5hrKuBtsCbs3R7Io+vXKRmh7Sra5LKi3OQ==
+"@budarin/browser-pino-dev-logger@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-dev-logger/-/browser-pino-dev-logger-1.0.13.tgz#c71f51ec397750f27db3bdd34f4930046699380b"
+  integrity sha512-tLbPSuwF7hnc3oloiaMCgCdaOTicbDG42DV8y4NC5G1GO4u8T6h6+HbMriK4DGgQtThwpIcSUPjCHHm06fH+Rw==
   dependencies:
     pino "^8.19.0"
 
-"@budarin/browser-pino-logger@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-logger/-/browser-pino-logger-1.0.9.tgz#61d09ed3e27708e482f40df19ace3df351b78122"
-  integrity sha512-HbMhEzh4DpBAeEkb3Fud5lFeK2zpEU8+ihDol7uAmYh13j0vNCP/yz+/bwTkpieg0cusfYzVMQeoxrcpGjQJyA==
+"@budarin/browser-pino-logger@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@budarin/browser-pino-logger/-/browser-pino-logger-1.0.10.tgz#04dbb4a3ecfb833ca03c27ad39e2d6572a6438c6"
+  integrity sha512-M6nsibilpJkd47qgEW8FNV4n218ynxn7AclAw0DE2m+cmgLAPQeOO1s5rdNZaqywxJ8VBIst+jSm9mhcto/pjg==
   dependencies:
     "@budarin/ulid" "^1.0.2"
     pino "^8.19.0"
