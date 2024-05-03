@@ -144,6 +144,7 @@ module.exports = {
             },
         ],
         'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
+        'react/no-unused-prop-types': 'off',
     },
 
     ignorePatterns: ['*.js', '!./src'],
