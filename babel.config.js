@@ -31,10 +31,7 @@ module.exports = {
     ],
     env: {
         production: {
-            plugins: [
-                ['babel-plugin-react-compiler', ReactCompilerConfig],
-                [('react-remove-properties', { properties: [/^data-test/] })],
-            ],
+            plugins: [[('react-remove-properties', { properties: [/^data-test/] })]],
         },
     },
 };
