@@ -10,7 +10,7 @@ module.exports = {
         serviceworker: true,
     },
 
-    plugins: ['@typescript-eslint', '@babel', 'boundaries', 'eslint-plugin-react-compiler'],
+    plugins: ['@typescript-eslint', '@babel', 'boundaries', 'react-compiler'],
 
     extends: [
         'airbnb',
