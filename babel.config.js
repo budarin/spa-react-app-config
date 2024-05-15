@@ -1,10 +1,6 @@
 const path = require('path');
 const { dependencies } = require(path.resolve(__dirname, './package.json'));
 
-const ReactCompilerConfig = {
-    /* ... */
-};
-
 module.exports = {
     comments: true,
     presets: [
@@ -31,7 +27,7 @@ module.exports = {
     ],
     env: {
         production: {
-            plugins: [[('react-remove-properties', { properties: [/^data-test/] })]],
+            plugins: [['react-remove-properties', { properties: [/^data-test/] }]],
         },
     },
 };
