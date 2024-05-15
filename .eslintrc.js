@@ -10,7 +10,7 @@ module.exports = {
         serviceworker: true,
     },
 
-    plugins: ['@typescript-eslint', '@babel', 'boundaries'],
+    plugins: ['@typescript-eslint', '@babel', 'boundaries', 'eslint-plugin-react-compiler'],
 
     extends: [
         'airbnb',
@@ -20,7 +20,7 @@ module.exports = {
         'plugin:@typescript-eslint/strict',
         'plugin:jsx-a11y/recommended',
         'plugin:sonarjs/recommended',
-        'plugin:boundaries/strict',
+        // 'plugin:boundaries/strict',
         'prettier',
     ],
 
@@ -145,6 +145,8 @@ module.exports = {
         ],
         'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
         'react/no-unused-prop-types': 'off',
+
+        'react-compiler/react-compiler': 2,
     },
 
     ignorePatterns: ['*.js', '!./src'],

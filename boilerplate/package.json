@@ -22,6 +22,7 @@
         "ts-lint": "sh ./tools/ts-lint.sh",
         "es-lint": "sh ./tools/es-lint.sh",
         "test": "sh ./tools/test.sh",
+        "react-compiller-check": "npx react-compiler-healthcheck",
         "список всех правил eslint": "sh ./tools/eslint-show-active-rules.sh",
         "какой eslint плагин тупит?": "sh ./tools/eslint-which-plugin-is-stupid.sh",
         "upgrade deps": "sh ./tools/upgrade-deps.sh"
