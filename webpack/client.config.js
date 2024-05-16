@@ -77,12 +77,7 @@ const config = {
                             sourceMap: true,
                             postcssOptions: {
                                 plugins: [
-                                    [
-                                        'postcss-preset-env',
-                                        {
-                                            // browsers: 'last 2 versions',
-                                        },
-                                    ],
+                                    'postcss-preset-env',
                                     [
                                         'postcss-pixels-to-rem',
                                         {
