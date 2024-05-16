@@ -5,7 +5,8 @@ const browserslistToEsbuild = require('./browserslist-to-esbuild.js');
 
 // browserslistToEsbuild('>0.2%, not dead')
 const esbuildTarget = browserslistToEsbuild();
-console.log('esbuildTarget:', browserslistToEsbuild());
+console.log('esbuild target:', browserslistToEsbuild());
+console.log('\n');
 
 const config = {
     mode: 'development',
