@@ -1,6 +1,10 @@
 module.exports = {
     extends: ['stylelint-config-standard', 'stylelint-config-clean-order'],
-    plugins: ['stylelint-use-logical-spec', 'stylelint-plugin-defensive-css'],
+    plugins: [
+        'stylelint-use-logical-spec',
+        'stylelint-plugin-defensive-css',
+        'stylelint-no-unsupported-browser-features',
+    ],
     rules: {
         'selector-class-pattern': null,
         'custom-property-pattern': null,
@@ -21,6 +25,13 @@ module.exports = {
                 'scroll-chaining': true,
                 'scrollbar-gutter': true,
                 'vendor-prefix-grouping': true,
+            },
+        ],
+
+        'plugin/no-unsupported-browser-features': [
+            true,
+            {
+                severity: 'warning',
             },
         ],
     },

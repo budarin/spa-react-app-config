@@ -88,6 +88,7 @@
         "stylelint": "^16.5.0",
         "stylelint-config-clean-order": "^5.4.2",
         "stylelint-config-standard": "^36.0.0",
+        "stylelint-no-unsupported-browser-features": "^8.0.1",
         "stylelint-plugin-defensive-css": "^1.0.4",
         "stylelint-use-logical-spec": "^5.0.1",
         "terser-webpack-plugin": "^5.3.10",
