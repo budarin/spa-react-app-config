@@ -1,3 +1,5 @@
+// https://github.com/marcofugaro/browserslist-to-esbuild
+
 const browserslist = require('browserslist');
 
 // convert the browserslist field in package.json to
