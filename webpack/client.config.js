@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-
 const browserslistToEsbuild = require('./browserslist-to-esbuild.js');
 
 const config = {
