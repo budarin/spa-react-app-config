@@ -32,6 +32,8 @@ module.exports = {
             true,
             {
                 severity: 'warning',
+                ignore: ['css-nesting', 'css-focus-visible', 'css-media-range-syntax'],
+                ignorePartialSupport: true,
             },
         ],
     },
