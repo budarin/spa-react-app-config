@@ -145,6 +145,13 @@ module.exports = {
         ],
         'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
         'react/no-unused-prop-types': 'off',
+
+        'jsx-a11y/label-has-associated-control': [
+            2,
+            {
+                controlComponents: ['Select, Input'],
+            },
+        ],
     },
 
     ignorePatterns: ['*.js', '!./src'],
