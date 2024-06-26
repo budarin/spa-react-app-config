@@ -49,6 +49,7 @@
         "babel-plugin-react-remove-properties": "^0.3.0",
         "browserslist": "^4.23.1",
         "caniuse-lite": "^1.0.30001637",
+        "cookie-parser": "^1.4.6",
         "copy-webpack-plugin": "^12.0.2",
         "core-js": "^3.37.0",
         "css-loader": "^7.1.2",
@@ -111,8 +112,5 @@
         "patch-version": "yarn version --patch",
         "npm-publish": "npm publish",
         "upgrade deps": "yarn upgrade-interactive --latest;"
-    },
-    "devDependencies": {
-        "cookie-parser": "^1.4.6"
     }
 }
