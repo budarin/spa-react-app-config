@@ -111,7 +111,6 @@
     },
     "scripts": {
         "показать что будет отправлено в npm": "npm pack --dry-run",
-        "postinstall": "pnpm add @budarin/spa-react-app-config --shamefully-hoist",
         "patch-version": "yarn version --patch",
         "npm-publish": "npm publish",
         "upgrade deps": "yarn upgrade-interactive --latest;"
