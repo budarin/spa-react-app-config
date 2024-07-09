@@ -1,6 +1,8 @@
 const path = require('path');
 const { dependencies } = require(path.resolve(__dirname, './package.json'));
 
+const isDev = process.env['NODE_ENV'] !== 'production';
+
 module.exports = {
     comments: true,
     presets: [
@@ -9,6 +11,7 @@ module.exports = {
             {
                 loose: true,
                 modules: 'auto',
+                debug: isDev,
                 corejs: {
                     version: dependencies['core-js'],
                     proposals: true,
@@ -20,7 +23,7 @@ module.exports = {
             '@babel/preset-react',
             {
                 runtime: 'automatic',
-                development: process.env['NODE_ENV'] !== 'production',
+                development: isDev,
             },
         ],
         '@babel/preset-typescript',
@@ -30,7 +33,8 @@ module.exports = {
             plugins: [
                 '@babel/plugin-transform-react-constant-elements',
                 '@babel/plugin-transform-react-inline-elements',
-                ['react-remove-properties', { properties: [/^data-test/] }]],
+                ['react-remove-properties', { properties: [/^data-test/] }],
+            ],
         },
     },
 };
