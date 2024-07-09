@@ -19,6 +19,16 @@
 
 `yarn add @budarin/spa-react-app-config`
 
+для pnpm:
+
+-   создайте файл .npmrc:
+
+```
+public-hoist-pattern[]=*
+```
+
+-   выполните команду установки: `pnpm add @budarin/spa-react-app-config`
+
 ## Настройка проекта
 
 В приложении нужно в файлах конфигурации, созданных в приложении, экспортировать импортированные из node_modules конфиги
