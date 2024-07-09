@@ -1,9 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-// browserslistToEsbuild('>0.2%, not dead')
-const browserslistToEsbuild = require('browserslist-to-esbuild');
+const browserslistToEsbuild = require('./browserslist-to-esbuild.js');
 
+// browserslistToEsbuild('>0.2%, not dead')
+const esbuildTarget = browserslistToEsbuild();
 console.log('esbuild target:', browserslistToEsbuild());
 console.log('\n');
 
@@ -66,7 +67,7 @@ const config = {
                     {
                         loader: 'esbuild-loader',
                         options: {
-                            target: browserslistToEsbuild(),
+                            target: esbuildTarget,
                         },
                     },
                 ],
