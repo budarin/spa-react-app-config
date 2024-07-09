@@ -27,7 +27,10 @@ module.exports = {
     ],
     env: {
         production: {
-            plugins: [['react-remove-properties', { properties: [/^data-test/] }]],
+            plugins: [
+                '@babel/plugin-transform-react-constant-elements',
+                '@babel/plugin-transform-react-inline-elements',
+                ['react-remove-properties', { properties: [/^data-test/] }]],
         },
     },
 };
