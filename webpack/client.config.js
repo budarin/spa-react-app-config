@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const browserslistToEsbuild = require('./browserslist-to-esbuild.js');
-const ReactRefreshPlugin = require('@webhotelier/webpack-fast-refresh');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 // browserslistToEsbuild('>0.2%, not dead')
 const esbuildTarget = browserslistToEsbuild();
@@ -12,7 +12,7 @@ console.log('\n');
 const config = {
     mode: 'development',
     devtool: 'inline-source-map',
-    entry: ['@webhotelier/webpack-fast-refresh/runtime.js', './src/client/index.ts'],
+    entry: './src/client/index.ts',
     output: {
         path: path.resolve('./dist'),
         trustedTypes: {
@@ -20,8 +20,8 @@ const config = {
         },
     },
     plugins: [
-        // Важно! должен быть первым
-        new ReactRefreshPlugin(),
+        // Важно! Должен быть первым
+        ReactRefreshWebpackPlugin(),
 
         new webpack.DefinePlugin({
             __DEBUG__: process.env['DEBUG'] === 'true',
@@ -61,21 +61,14 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav|ico|xml|woff2)$/i,
-                type: 'asset/resource',
-            },
-            {
                 test: /\.(ts|tsx|js|jsx|json)$/,
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'esbuild-loader',
+                        loader: 'babel-loader',
                         options: {
                             target: esbuildTarget,
                         },
-                    },
-                    {
-                        loader: '@webhotelier/webpack-fast-refresh/loader.js',
                     },
                 ],
             },
@@ -105,6 +98,10 @@ const config = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav|ico|xml|woff2)$/i,
+                type: 'asset/resource',
             },
         ],
     },
