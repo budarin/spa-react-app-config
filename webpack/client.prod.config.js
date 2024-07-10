@@ -10,7 +10,7 @@ const budarinPackagesPath = path.resolve('./node_modules/@budarin/');
 const config = {
     mode: 'production',
     devtool: false,
-    entry: './src/client/index.ts',
+    entry: './src/client/index.mts',
     cache: {
         type: 'filesystem',
     },

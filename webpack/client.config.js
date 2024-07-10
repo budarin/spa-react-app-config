@@ -10,7 +10,7 @@ console.log('\n');
 const config = {
     mode: 'development',
     devtool: 'inline-source-map',
-    entry: './src/client/index.ts',
+    entry: './src/client/index.mts',
     output: {
         path: path.resolve('./dist'),
         trustedTypes: {

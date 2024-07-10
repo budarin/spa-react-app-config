@@ -5,7 +5,7 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const config = {
     mode: 'development',
     devtool: false,
-    entry: './src/server/index.ts',
+    entry: './src/server/index.mts',
     output: {
         path: path.resolve('./dist'),
         filename: 'sw.js',
