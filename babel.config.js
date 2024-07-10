@@ -10,11 +10,11 @@ module.exports = {
             '@babel/preset-env',
             {
                 loose: true,
-                modules: 'auto',
                 debug: isDev,
+                modules: 'auto',
                 corejs: {
-                    version: dependencies['core-js'],
                     proposals: true,
+                    version: dependencies['core-js'],
                 },
                 useBuiltIns: 'entry',
             },
@@ -22,15 +22,15 @@ module.exports = {
         [
             '@babel/preset-react',
             {
-                runtime: 'automatic',
                 development: isDev,
+                runtime: 'automatic',
             },
         ],
         '@babel/preset-typescript',
     ],
     env: {
         development: {
-            plugins: ['react-refresh/babel'],
+            plugins: [],
         },
         production: {
             plugins: [

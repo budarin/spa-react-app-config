@@ -2,9 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const browserslistToEsbuild = require('./browserslist-to-esbuild.js');
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
-// browserslistToEsbuild('>0.2%, not dead')
 const esbuildTarget = browserslistToEsbuild();
 console.log('esbuild target:', browserslistToEsbuild());
 console.log('\n');
@@ -20,13 +18,6 @@ const config = {
         },
     },
     plugins: [
-        // Важно! Должен быть первым
-        new ReactRefreshWebpackPlugin({
-            overlay: {
-                useURLPolyfill: true,
-            },
-        }),
-
         new webpack.DefinePlugin({
             __DEBUG__: process.env['DEBUG'] === 'true',
             __DEV__: process.env['NODE_ENV'] !== 'production',
@@ -69,9 +60,9 @@ const config = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'babel-loader',
+                        loader: 'esbuild-loader',
                         options: {
-                            // target: esbuildTarget,
+                            target: esbuildTarget,
                         },
                     },
                 ],

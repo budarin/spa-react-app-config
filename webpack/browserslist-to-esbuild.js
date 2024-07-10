@@ -1,4 +1,5 @@
 // https://github.com/marcofugaro/browserslist-to-esbuild
+// сделал кастомный CommonJS модуль так как в CommonJS нельзя импортировать ESM
 
 const browserslist = require('browserslist');
 
