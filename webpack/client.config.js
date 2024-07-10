@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const browserslistToEsbuild = require('./browserslist-to-esbuild.js');
+const ReactRefreshPlugin = require('@webhotelier/webpack-fast-refresh');
 
 // browserslistToEsbuild('>0.2%, not dead')
 const esbuildTarget = browserslistToEsbuild();
@@ -11,7 +12,7 @@ console.log('\n');
 const config = {
     mode: 'development',
     devtool: 'inline-source-map',
-    entry: './src/client/index.ts',
+    entry: ['@webhotelier/webpack-fast-refresh/runtime.js', './src/client/index.ts'],
     output: {
         path: path.resolve('./dist'),
         trustedTypes: {
@@ -19,6 +20,9 @@ const config = {
         },
     },
     plugins: [
+        // Важно! должен быть первым
+        new ReactRefreshPlugin(),
+
         new webpack.DefinePlugin({
             __DEBUG__: process.env['DEBUG'] === 'true',
             __DEV__: process.env['NODE_ENV'] !== 'production',
@@ -69,6 +73,9 @@ const config = {
                         options: {
                             target: esbuildTarget,
                         },
+                    },
+                    {
+                        loader: '@webhotelier/webpack-fast-refresh/loader.js',
                     },
                 ],
             },

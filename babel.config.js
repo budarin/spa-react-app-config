@@ -1,5 +1,6 @@
 const path = require('path');
 const { dependencies } = require(path.resolve(__dirname, './package.json'));
+const ErrorOverlayPlugin = require('@webhotelier/webpack-fast-refresh/error-overlay');
 
 const isDev = process.env['NODE_ENV'] !== 'production';
 
@@ -29,6 +30,9 @@ module.exports = {
         '@babel/preset-typescript',
     ],
     env: {
+        development: {
+            plugins: ['react-refresh/babel', new ErrorOverlayPlugin()],
+        },
         production: {
             plugins: [
                 '@babel/plugin-transform-react-constant-elements',
