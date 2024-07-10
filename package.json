@@ -95,7 +95,7 @@
         "stylelint-plugin-defensive-css": "^1.0.4",
         "stylelint-use-logical-spec": "^5.0.1",
         "terser-webpack-plugin": "^5.3.10",
-        "ts-jest": "^29.2.1",
+        "ts-jest": "^29.2.2",
         "tsconfig-paths-webpack-plugin": "^4.1.0",
         "typescript": "^5.5.3",
         "webpack": "^5.92.1",
