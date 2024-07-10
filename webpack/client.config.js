@@ -21,7 +21,11 @@ const config = {
     },
     plugins: [
         // Важно! Должен быть первым
-        ReactRefreshWebpackPlugin(),
+        new ReactRefreshWebpackPlugin({
+            overlay: {
+                useURLPolyfill: true,
+            },
+        }),
 
         new webpack.DefinePlugin({
             __DEBUG__: process.env['DEBUG'] === 'true',
