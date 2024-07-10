@@ -22,6 +22,7 @@ const config = {
     resolve: {
         extensions: [
             '.ts',
+            '.mts',
             '.tsx',
             '.js',
             '.jsx',
@@ -49,11 +50,7 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav|ico|xml|woff2)$/i,
-                type: 'asset/resource',
-            },
-            {
-                test: /\.(ts|tsx|js|jsx|json)$/,
+                test: /\.(ts|mts|tsx|js|jsx|json)$/,
                 exclude: /node_modules/,
                 use: [
                     {
@@ -63,6 +60,10 @@ const config = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav|ico|xml|woff2)$/i,
+                type: 'asset/resource',
             },
         ],
     },

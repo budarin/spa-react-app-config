@@ -43,6 +43,7 @@ const config = {
     resolve: {
         extensions: [
             '.ts',
+            '.mts',
             '.tsx',
             '.js',
             '.jsx',
@@ -70,7 +71,7 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(ts|tsx|js|jsx|json)$/,
+                test: /\.(ts|mts|tsx|js|jsx|json)$/,
                 exclude: (filePath) => {
                     if (!filePath) {
                         return true;
