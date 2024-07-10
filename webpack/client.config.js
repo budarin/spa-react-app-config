@@ -71,7 +71,7 @@ const config = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            target: esbuildTarget,
+                            // target: esbuildTarget,
                         },
                     },
                 ],
