@@ -68,11 +68,11 @@ module.exports = {
 
     // A set of global variables that need to be available in all test environments
     globals: {
-        __DEBUG__: process.env['DEBUG'] === 'true',
-        __DEV__: process.env['NODE_ENV'] !== 'production',
-        __PROD__: process.env['NODE_ENV'] === 'production',
-        __TEST__: process.env['NODE_ENV'] === 'test',
-        __VERSION__: process.env.npm_package_version,
+        DEBUG: process.env['DEBUG'] === 'true',
+        DEV: process.env['NODE_ENV'] !== 'production',
+        PROD: process.env['NODE_ENV'] === 'production',
+        TEST: process.env['NODE_ENV'] === 'test',
+        VERSION: process.env.npm_package_version,
         IS_REACT_ACT_ENVIRONMENT: true,
     },
 

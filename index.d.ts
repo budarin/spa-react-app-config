@@ -1,8 +1,8 @@
-declare const __DEBUG__: boolean;
-declare const __DEV__: boolean;
-declare const __PROD__: boolean;
-declare const __TEST__: boolean;
-declare const __VERSION__: string;
+declare const DEBUG: boolean;
+declare const DEV: boolean;
+declare const PROD: boolean;
+declare const TEST: boolean;
+declare const VERSION: string;
 declare const __LIGHT_SCHEMA__: string;
 
 declare module '*.css';

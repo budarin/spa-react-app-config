@@ -19,11 +19,11 @@ const config = {
     },
     plugins: [
         new webpack.DefinePlugin({
-            __DEBUG__: process.env['DEBUG'] === 'true',
-            __DEV__: process.env['NODE_ENV'] !== 'production',
-            __PROD__: process.env['NODE_ENV'] === 'production',
-            __TEST__: process.env['NODE_ENV'] === 'test',
-            __VERSION__: JSON.stringify(process.env.npm_package_version),
+            DEBUG: process.env['DEBUG'] === 'true',
+            DEV: process.env['NODE_ENV'] !== 'production',
+            PROD: process.env['NODE_ENV'] === 'production',
+            TEST: process.env['NODE_ENV'] === 'test',
+            VERSION: JSON.stringify(process.env.npm_package_version),
         }),
     ],
     resolve: {
