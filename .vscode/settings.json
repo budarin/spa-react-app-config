@@ -90,8 +90,8 @@
     "window.zoomLevel": 0,
 
     // npm
-    "npm.packageManager": "pnpm",
     "npm.scriptExplorerAction": "run",
+    "npm.packageManager": "yarn",
 
     //
     "explorer.confirmDragAndDrop": false,
@@ -118,6 +118,5 @@
         "sound": "on"
     },
     "terminal.integrated.enableVisualBell": true,
-    "workbench.fontAliasing": "antialiased",
     "editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace"
 }
