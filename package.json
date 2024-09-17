@@ -1,6 +1,6 @@
 {
     "name": "@budarin/spa-react-app-config",
-    "version": "1.0.254",
+    "version": "1.0.255",
     "description": "Configs for React SPA",
     "main": "./src/index.js",
     "types": "./index.d.ts",
@@ -11,9 +11,7 @@
     "homepage": "https://github.com/budarin/spa-react-app-config#readme",
     "author": "Vadim Budarin <budarin-vv@yandex.ru>",
     "license": "MIT",
-    "bin": {
-        "spa-react-app-config": "./bin/cli.js"
-    },
+    "bin": "./bin/cli.js",
     "dependencies": {
         "@babel/core": "7.25.2",
         "@babel/eslint-plugin": "7.25.1",
@@ -114,7 +112,5 @@
         "patch-version": "yarn version --patch",
         "npm-publish": "npm publish",
         "upgrade deps": "yarn upgrade-interactive --latest;"
-    },
-    "devDependencies": {},
-    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    }
 }
